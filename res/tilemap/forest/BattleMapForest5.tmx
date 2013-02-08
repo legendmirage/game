@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="70" height="24" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="ID" value="1"/>
+ </properties>
+ <tileset firstgid="1" name="bottom1" tilewidth="32" tileheight="32">
+  <image source="bottom1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="grassTile1" tilewidth="32" tileheight="32">
+  <image source="grassTile1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="tile1" tilewidth="32" tileheight="32">
+  <image source="tile1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="4" name="bottom2" tilewidth="32" tileheight="32">
+  <image source="bottom2.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="5" name="tileForest" tilewidth="32" tileheight="32">
+  <image source="tileForest.png" width="480" height="64"/>
+ </tileset>
+ <layer name="platform" width="70" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2WywqAIBBFpbXWomX//58pOTALKUN8lOfAhQnC5DpzzRjIYfdaopyqU89HpW8/rZv7Xm9kn+Jbr/2mznRE70bxC/5F6KtNiR57x1fyA8ppncG6t4LCfFqvNdYu1vRcfe5yspX//AOUEzyUGZL5sarGU4CLGfJG8kDfs7NkwwznCwAAAHU4Aesz7hpAGgAA
+  </data>
+ </layer>
+ <objectgroup name="spawns" width="70" height="24">
+  <object name="playerSpawn" x="20" y="463" width="89" height="146">
+   <properties>
+    <property name="spawnID" value="0"/>
+   </properties>
+  </object>
+  <object name="monsterSpawn" x="1290" y="332" width="94" height="157">
+   <properties>
+    <property name="spawnID" value="1"/>
+   </properties>
+  </object>
+  <object name="monsterSpawn" x="1989" y="102" width="94" height="157">
+   <properties>
+    <property name="spawnID" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="background" width="70" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2X3QqDMAyFswvn39V2uQt9/7dcAg0LYYLTLq30fHAoSrFymhwrEQDHebJG1sSakyZ3T8dH5rUXVsdaM80rjXh5Mzrqlzxnj99b88Sve5L4NlCd3uXy65f1fK3/e00Qz4s+9S/q01hrH0Rh69/nu+0DzVv1rnXfFPHPe3f1/IjOYP9tsjXWU7s1V+IcZnNSPdeclOsI/6Prbw9be1Frz/v3xRkHgO/UmDe5KflPX5oW9hcAAAA4yxuGfj//QBoAAA==
+  </data>
+ </layer>
+ <layer name="wall" width="70" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2SQQ7DIAwEURGGQ/P/77YHLE02oFZRDz3sSBaOWRtwXIoxxhhjjDHGGGOMMcb8N48f2BP+cbPGsam3q3v3nG+tvm3MtU2/TYsZr9AN8TMnoGd8SI2O/bqox1iILlCjS83UNeyvalbomsRU10TbJC/PiIUu7xQfYulnHWoG8gI2yrnn9FNb4Q/ctcP4j/jftU86I+wLz+Sq/Yqyfjvfpv0e5dyf3bf2oktM91Y+jf3hPNM4w9ornfdWrvPEHM7z6hy9G9/MeaUuNrGQvFy76NgDrnqflfGNL7tuapBAGgAA
+  </data>
+ </layer>
+</map>

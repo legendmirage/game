@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="10" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="wood" tilewidth="32" tileheight="32">
+  <image source="wood.jpg" width="468" height="313"/>
+ </tileset>
+ <tileset firstgid="127" name="stone" tilewidth="32" tileheight="32">
+  <image source="stone.jpg" width="259" height="194"/>
+ </tileset>
+ <layer name="background" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgQIAGJIwNNBDAtFBXT2V1A+UPYgEAX3v13JABAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NkYGBgJBITArRQRwwgRd1A+YNYDADBsCsnkAEAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="10" height="10">
+  <object name="0" type="portal" x="0" y="128" width="32" height="64">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

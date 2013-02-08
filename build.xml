@@ -1,0 +1,120 @@
+<project name="epic-game" basedir="." default="run">
+	<description>
+	This buildfile is used to build the epic-game jar as well as launch
+	various configurations of multiple clients + server.
+	</description>
+	
+	<!-- parameter definitions -->
+	<property name="main-class" value="entrypoint.ClientEntryPoint" />	
+	<property name="server-class" value="server.haitaofake.HaitaosFakeServer" />
+	<property name="inter.jar.name" value="insecure.jar" />
+	<property name="final.jar.name" value="epic.jar" />
+	<taskdef resource="proguard/ant/task.properties" classpath="tools/proguard.jar" />
+
+	<target name="proguard">
+		<condition property="javalibs" value="/System/Library/Frameworks/JavaVM.framework/Classes/classes.jar">
+			<os family="mac" />
+		</condition>
+		<condition property="javalibs" value="${java.home}/lib/rt.jar">
+			<or>
+				<os family="windows" />
+				<os family="unix" />
+			</or>
+		</condition>
+		<condition property="jsselibs" value="/System/Library/Frameworks/JavaVM.framework/Classes/jsse.jar">
+			<os family="mac" />
+		</condition>
+		<condition property="jsselibs" value="${java.home}/lib/jsse.jar">
+			<or>
+				<os family="windows" />
+				<os family="unix" />
+			</or>
+		</condition>
+		<echo>OS Dependent Libs: ${javalibs}</echo>
+		<proguard>
+			-libraryjars ${javalibs}
+			-libraryjars ${jsselibs}
+			-libraryjars lib
+			
+			-injars     dist/${inter.jar.name}
+			-outjars    dist/${final.jar.name}
+			-printmapping dist/app.map
+			-repackageclasses
+			
+			-keep public class entrypoint.ClientEntryPoint {
+				public static void main(java.lang.String[]);
+			}
+			-keep public class client.EpicnessAppShell{
+				public static void main(java.lang.String[]);
+			}
+			-keep public class battle.BattleCreature
+			-keepclasseswithmembers class * {
+			    public &lt;init&gt;(battle.BattleCreature);
+			}	
+		</proguard>
+		<jar destfile="dist/${final.jar.name}" update="true">
+			<zipfileset dir="res" prefix="res" />
+		</jar>
+	</target>
+	
+	<!-- classpath definition -->
+	<path id="normal">
+		<pathelement path="bin" />
+		<pathelement path="res" />
+		<fileset dir="lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<!-- standard ANT compilation task definitions -->
+	<target name="clean">
+		<delete dir="bin" />
+		<delete dir="dist" />
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="bin" />
+		<javac srcdir="src" destdir="bin" classpathref="normal"/>
+	</target>
+	<target name="jar" depends="compile" description="builds a standalone jar">
+		<mkdir dir="dist" />
+		<jar destfile="dist/${inter.jar.name}">
+			<fileset dir="bin" />
+			<zipfileset dir="res" prefix="res" />
+			<fileset dir="lib" />
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}" />
+			</manifest>
+		</jar>
+	<antcall target="proguard" />
+	<delete file="dist/${inter.jar.name}" />
+	</target>
+
+	<target name="run" depends="jar" description="builds and runs the game">
+		<java jar="dist/${final.jar.name}" fork="true">
+			<jvmarg value="-Xmx1024M -XX:MaxPermSize=256m" />
+		</java>
+	</target>
+	
+	<!-- special ANT tasks for testing server code & launching multiple clients. Both these tasks disable fake -->
+	<target name="launch_client">
+		<java classname="${main-class}" classpathref="normal" fork="true">
+			<sysproperty key="java.library.path" value="lib/natives"/>
+			<sysproperty key="server.real" value="true" />	
+		</java>
+	</target>
+	<target name="launch_server">
+		<java classname="${server-class}" classpathref="normal" fork="true">
+			<sysproperty key="server.real" value="true" />	
+		</java>
+	</target>
+	<target name="launch_2" depends="compile" description="launches a server and two clients for testing">
+		<sequential>
+			<parallel>
+				<antcall target="launch_server" />
+				<antcall target="launch_client" />
+				<antcall target="launch_client" />
+			</parallel>
+		</sequential>
+	</target>
+	
+</project>

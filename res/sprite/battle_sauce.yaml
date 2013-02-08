@@ -1,0 +1,61 @@
+hitboxes:
+ - xpos: 140
+   ypos: 80
+   width: 150
+   height: 255
+   collision: true
+   multiplier: 1
+ - xpos: 130
+   ypos: 80
+   width: 170
+   height: 255
+   collision: false
+   multiplier: 1
+   
+run:
+  speed: 150
+  frames:
+    - res/sprite/sauce/cast1.png
+    - res/sprite/sauce/cast2.png
+    - res/sprite/sauce/mid1.png
+    - res/sprite/sauce/cast6.png
+idle:
+  speed: 100
+  frames:
+    - res/sprite/sauce/cast1.png
+    - res/sprite/sauce/cast2.png
+    - res/sprite/sauce/mid1.png
+    - res/sprite/sauce/cast6.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/sauce/cast3.png
+death:
+  speed: 150
+  frames:
+    - res/sprite/sauce/dying0.png
+    - res/sprite/sauce/dying1.png
+    - res/sprite/sauce/dying2.png
+    - res/sprite/sauce/dying3.png
+    - res/sprite/sauce/dying4.png
+    - res/sprite/sauce/dying5.png
+    - res/sprite/sauce/dying6.png
+    - res/sprite/sauce/dying7.png
+    - res/sprite/sauce/dying8.png
+    - res/sprite/sauce/dying9.png
+    - res/sprite/sauce/dying10.png
+
+
+cast:
+  speed: 15
+  frames:
+    - res/sprite/sauce/cast1.png
+    - res/sprite/sauce/cast2.png
+    - res/sprite/sauce/cast3.png
+    - res/sprite/sauce/cast4.png
+    - res/sprite/sauce/cast5.png
+    - res/sprite/sauce/cast6.png
+    - res/sprite/sauce/cast_mid1.png
+    - res/sprite/sauce/cast_mid2.png
+    - res/sprite/sauce/cast_mid3.png
+    - res/sprite/sauce/cast_mid4.png

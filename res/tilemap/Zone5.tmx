@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="24" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="name" value="Factory"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="alma_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/alma_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="24" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NhYGBwBWI3IHahIZsbiulh1yh7lD3KHmUPBzYAaYSfRqAFAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="24" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+NgYGDgoCHmhGJiQBszkQqhAGY2sn3UBKS4fdT8UfNHzR+Z5lOrrGRgwCw7AfxEdyGgBQAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="24" height="15">
+  <object name="0" type="portal" x="608" y="448" width="32" height="32">
+   <properties>
+    <property name="" value=""/>
+    <property name="active" value="SteamDone"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="6"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="64" y="32" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="5"/>
+   </properties>
+  </object>
+  <object type="portal" x="128" y="32" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="GetSteam"/>
+    <property name="quest" value="Get Steam"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="24" height="15">
+  <object name="alma" type="npcs" x="328" y="12" width="80" height="80">
+   <properties>
+    <property name="quest" value="Get Steam"/>
+    <property name="scene" value="GetSteam"/>
+    <property name="scene1" value="GetSteamInter"/>
+    <property name="scene2" value="SteamDone"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="24" height="15">
+  <object name="monsterGroup0" x="256" y="128" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="576" y="64" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="160" y="352" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

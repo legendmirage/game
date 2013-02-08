@@ -1,0 +1,45 @@
+hitboxes:
+ - xpos: 5
+   ypos: 5
+   width: 80
+   height: 35
+   collision: false
+   multiplier: 1
+ - xpos: 5
+   ypos: 5
+   width: 80
+   height: 10
+   collision: true
+   multiplier: 1
+
+run:
+  speed: 200
+  frames:
+    - res/sprite/creepy/standing0.png
+    - res/sprite/creepy/standing1.png
+    - res/sprite/creepy/standing2.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/creepy/standing0.png
+    - res/sprite/creepy/standing1.png
+    - res/sprite/creepy/standing2.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/creepy/hit.png
+melee:
+  speed: 10
+  frames:
+    - res/sprite/creepy/standing0.png
+death:
+  speed: 10
+  frames:
+    - res/sprite/creepy/dying0.png
+    - res/sprite/creepy/dying1.png
+    - res/sprite/creepy/dying2.png
+    - res/sprite/creepy/dying3.png
+steam:    
+ - width: 32
+   height: 60
+   yoffset: -45

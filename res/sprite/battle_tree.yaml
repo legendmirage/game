@@ -1,0 +1,58 @@
+hitboxes:
+ - xpos: 90
+   ypos: 70
+   width: 25
+   height: 95
+   collision: true
+   multiplier: 1
+ - xpos: 35
+   ypos: 20
+   width: 130
+   height: 125
+   collision: false
+   multiplier: 1
+
+run:
+  speed: 100
+  frames:
+    - res/sprite/tree/standing0.png
+    - res/sprite/tree/standing1.png
+    - res/sprite/tree/standing2.png
+    - res/sprite/tree/standing3.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/tree/standing0.png
+    - res/sprite/tree/standing1.png
+    - res/sprite/tree/standing2.png
+    - res/sprite/tree/standing3.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/tree/standing1.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/tree/standing0.png
+    - res/sprite/tree/standing1.png
+    - res/sprite/tree/standing2.png
+    - res/sprite/tree/standing3.png
+cast:
+  speed: 200
+  frames:
+    - res/sprite/tree/standing0.png
+    - res/sprite/tree/standing1.png
+    - res/sprite/tree/standing2.png
+    - res/sprite/tree/standing3.png
+
+death:
+  speed: 200
+  frames:
+    - res/sprite/tree/dying0.png
+    - res/sprite/tree/dying1.png
+  
+steam:
+ - width: 47
+   yoffset: 50
+   height: 90

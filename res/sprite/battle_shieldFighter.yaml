@@ -1,0 +1,60 @@
+hitboxes:
+ - xpos: 82
+   ypos: 45
+   width: 60
+   height: 90
+   collision: true
+   multiplier: 1
+run:
+  speed: 100
+  frames:
+    - res/sprite/shieldFighter/walking0.png
+    - res/sprite/shieldFighter/walking1.png
+    - res/sprite/shieldFighter/walking2.png
+    - res/sprite/shieldFighter/walking3.png
+    - res/sprite/shieldFighter/walking4.png
+    - res/sprite/shieldFighter/walking5.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/shieldFighter/stand1.png
+    - res/sprite/shieldFighter/stand2.png
+    - res/sprite/shieldFighter/stand3.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/shieldFighter/jump0.png
+    - res/sprite/shieldFighter/jump1.png
+fall:
+  speed: 300
+  frames:
+    - res/sprite/shieldFighter/jump1.png
+    - res/sprite/shieldFighter/jump2.png
+air:
+  speed: 50
+  frames:
+    - res/sprite/shieldFighter/jump2.png
+land:
+  speed: 10
+  frames:
+    - res/sprite/shieldFighter/jump3.png
+melee:
+  speed: 10
+  frames:
+    - res/sprite/shieldFighter/attack1.png
+    - res/sprite/shieldFighter/attack2.png
+    - res/sprite/shieldFighter/attack3.png
+death:
+  speed: 200
+  frames:
+    - res/sprite/shieldFighter/dying0.png
+    - res/sprite/shieldFighter/dying1.png
+    - res/sprite/shieldFighter/dying2.png
+    - res/sprite/shieldFighter/dying3.png
+    
+steam:
+ - width: 47
+   height: 90
+   xoffset: -40
+   r_xoffset: -40
+   yoffset: 10

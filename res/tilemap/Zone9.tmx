@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="35" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="name" value="Odell"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="sam_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/sam_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="913" name="factoryboss_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/factoryboss_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="925" name="lucas_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/lucas_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="937" name="ben_front" tilewidth="32" tileheight="32">
+  <image source="../npcs/ben_front.png" width="32" height="32"/>
+ </tileset>
+ <layer name="background" width="60" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3WsQkAIAwF0XSZxP1XtLUSIYaY7xXXGh+o6GbmRESbxlL1XvDmeivCizfLqzwTr/ZMvNoz8eatjfcN72//Dbza3sidrO50X3jxdvLefjvw9gpv7NxUe/DGvN3Dqx1e7V7xTqcmGy/QIAAA
+  </data>
+ </layer>
+ <layer name="collision" width="60" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2WyW7UQBCG2x7gxo0bm1luCA48ARgeAF6AGC5IbA+AAHMBsZ24ETAXSIAnSFgurI/AdklYXoPlG2lKKUpupmfSGMfyr3zqaVe5qn/XZGZS51wG6WjVr4drBTkUo32hrktMrucmx67OU0vXlH1lYqm5V5/R3q/j+lyV8ZebOsO1VPdkai1V/8y8Lmtys5Hf4i9x3cPG9Nlln3ru13F7LuvL+tfzlRx5VtLfPvfKPCd57k7Fc1PLqfxihFOx0tXPV3KkX+nGz1fOJHWljtTWvfX8JVao6xKz70epqWvnau/U9TpVKiZ9bFxWiZeqps7XPSr3p2zdTK2ZJy/zrEM9GdT3/ReyXnr16tWra9oIewPZ1OC5HsBDmIN5eASPI9Q96sL97o/QL1Qv4RW8hjfwFt5FqDuJ3yMR+oVqCZbhC3yFb/A9Qt22zvcH/IRfw03CH6TJ6uu2db6b8bYFtsI22A5Zw35jz/fqYHxObLV1vtPojmLWk9PW/99ptKBY9OTscd2Zb4jfk7Cez4ENMIB1ycr+FLHTcAbOwrlGTj29QvxegV142w07YGeysr9G7DrcgJtwq5FTT68Qvz6d97xus1bjt063/8P3xySK7bft0n73JeO/m9qgA5zzIORwCA5P8JtqwUObZ30MfzNQwHE40XG/F/B3ES5BCZc77ncWf3fhHlRwv+N+F/H3FJ7Bc3gRwa/+7Ar5jd2k3nO2D/ARPsHnCH7X4txD1Pvt/fZ+165+AzaqUpbQIAAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="60" height="35">
+  <properties>
+   <property name="layerID" value="portal"/>
+  </properties>
+  <object name="0" type="portal" x="512" y="672" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="MeetAlma"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="4"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="864" y="0" width="32" height="32">
+   <properties>
+    <property name="" value=""/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="7"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="544" y="672" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="MeetAlma"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="4"/>
+   </properties>
+  </object>
+  <object type="portal" x="832" y="1088" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="NoGoHome"/>
+   </properties>
+  </object>
+  <object type="portal" x="864" y="1088" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="NoGoHome"/>
+   </properties>
+  </object>
+  <object type="portal" x="896" y="1088" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="NoGoHome"/>
+   </properties>
+  </object>
+  <object type="portal" x="864" y="64" width="32" height="32">
+   <properties>
+    <property name="active" value="LucasCaught"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="10"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="60" height="35">
+  <object name="factory" type="npcs" x="617" y="681" width="80" height="80">
+   <properties>
+    <property name="" value=""/>
+    <property name="scene" value="FactoryDone"/>
+   </properties>
+  </object>
+  <object name="ben" type="npcs" x="874" y="106" width="80" height="80">
+   <properties>
+    <property name="" value=""/>
+    <property name="scene" value="Shop"/>
+   </properties>
+  </object>
+  <object name="sam" type="npcs" x="1254" y="456" width="80" height="80">
+   <properties>
+    <property name="quest" value="Find Kids and Sauce"/>
+    <property name="scene" value="GetSauceQuest"/>
+    <property name="scene1" value="GetSauceInter"/>
+    <property name="scene2" value="SauceDone"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="60" height="35">
+  <properties>
+   <property name="layerID" value="monsters"/>
+  </properties>
+ </objectgroup>
+</map>

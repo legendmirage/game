@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="60" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="name" value="Forest 1"/>
+ </properties>
+ <tileset firstgid="1" name="grave" tilewidth="32" tileheight="32">
+  <image source="grave.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="902" name="elise_sprites" tilewidth="32" tileheight="32">
+  <image source="elise_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="914" name="Jackie_sprites" tilewidth="32" tileheight="32">
+  <image source="Jackie_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="50" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DwQkAAAwDoSP7D90x+lFw1VRVVVVVVVVVVVVV9fkBZnDd2OAuAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="50" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2WQQ7DMAgEXeUl/Uj//6yeKkVWTPCyGJwyEjeHyEy8ztFaOwjVSH3QepOqEXshdZ7nmdU+UHofPat9oIx8vLp9lo9YH/0+pXl5+kDzarRPaV6ePrzy6orykctHJEwfkZSPXHjlleXetuQcO68s97Yl58rHeE1GHxq8fCDvsuSRlw/kXZY7IqMPxElWH9JMVs5as0byIc1k5aw1a8rHM3xcwZo1CuLjCtasUVg+omH5iCbaB5p9Up8IH2j2SX20/0VI9cw8+1HsQ+ODUdL87kqzjx18aM7IDj40Z2QXHzN9MvuY6cP4XnfzMeIpPlbj5WM15eM/fHjeQRnyauU9xDgHWX3M8hQfVrL4sFI+yscPRu5oe2nWoz4YuaPtpVnvnf13c2b18s7+uzmzepWP8lE+xvUFiDgxU+AuAAA=
+  </data>
+ </layer>
+ <objectgroup name="portal" width="50" height="60">
+  <object name="0" type="portal" x="992" y="1888" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="10"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="576" y="0" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="MeetSauce"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="9"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="50" height="60">
+  <object name="energyrecipe" type="npc" x="108" y="112" width="67" height="70">
+   <properties>
+    <property name="recipe" value="Energy Potion"/>
+    <property name="scene" value="Tombstone2"/>
+    <property name="scene1" value="TombstoneInter"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="50" height="60">
+  <object name="monsterGroup0" x="224" y="1568" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="608" y="1600" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="448" y="1280" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="672" y="736" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="448" y="640" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1376" y="1600" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="384" y="224" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1248" y="640" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1344" y="1024" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="256" y="864" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="960" y="512" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1152" y="1312" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="96" y="384" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1120" y="128" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1248" y="384" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1504" y="64" width="32" height="32">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe Fighter,Vagrant"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

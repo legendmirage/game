@@ -1,0 +1,10 @@
+idle:
+  speed: 200
+  frames:
+    - res/sprite/teacup/idle.png
+steam:
+ - width: 24
+   yoffset: -20
+   xoffset: -5
+   r_xoffset: -5
+   height: 45

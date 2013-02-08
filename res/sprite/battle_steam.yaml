@@ -1,0 +1,28 @@
+blue:
+  speed: 200
+  frames:
+    - res/sprite/steam/blue0.png
+    - res/sprite/steam/blue1.png
+    - res/sprite/steam/blue2.png
+    - res/sprite/steam/blue3.png
+yellow:
+  speed: 200
+  frames:
+    - res/sprite/steam/yellow0.png
+    - res/sprite/steam/yellow1.png
+    - res/sprite/steam/yellow2.png
+    - res/sprite/steam/yellow3.png
+green:
+  speed: 200
+  frames:
+    - res/sprite/steam/green0.png
+    - res/sprite/steam/green1.png
+    - res/sprite/steam/green2.png
+    - res/sprite/steam/green3.png
+red:
+  speed: 200
+  frames:
+    - res/sprite/steam/red0.png
+    - res/sprite/steam/red1.png
+    - res/sprite/steam/red2.png
+    - res/sprite/steam/red3.png

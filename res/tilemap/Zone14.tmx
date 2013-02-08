@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="30" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="name" value="Forest 1"/>
+ </properties>
+ <tileset firstgid="1" name="grave" tilewidth="32" tileheight="32">
+  <image source="grave.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="902" name="elise_sprites" tilewidth="32" tileheight="32">
+  <image source="elise_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="914" name="Jackie_sprites" tilewidth="32" tileheight="32">
+  <image source="Jackie_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="60" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3UwRFAQBBE0d4cSITkpxAIiXA1RyWAsdX+4d+7Ly8kxaMlW7PNtHi1Z0cHu6r+ntnVwa6qv0OTxvb9rqq/U36df/QXr7zCK7xyCq/wyim8wiun8AqvnMIrvHIKr/DKKbzCK6fwyturG7d4wZkgHAAA
+  </data>
+ </layer>
+ <layer name="collision" width="60" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA8VWbY5DIQj0au8kvf8tdn+sCaHMB2K3JI2vigwyCqyl5fX7e/7G/R3lATpo3hndfV09R+Le/Y3iEXXQvDO6+7I/rzAqv5FEG9/itzpDXMsy4TfaUPxGLJff6iyIj6yH/JzwG7GqPQwf8RRHpsuwkM70/Spx8V1bLla0+aT/N/hFou7Xxkd7mV1kq8pT1X2Ja538zATdT2WDxTxzg9biHHvP3fycbSvJOiz3MMyKG5fftbANJijHIl03lh1+T99erhnunqrGIN3pWRHmRKb8Vjor6Dj4DA/1TQhXzSnMrMdirXqeLjfdO1Llilv3wemvKp+YnPjG+o4btdblN4uKtVO7V7HO+g5krxPXKb+s/iqdvI56ccT5SY5XuVKd1en90VvMNvJcVTtyve6+6ZNaWMV/Fb5kXWZr7/80vxvTjVOF7957t+eq5tB7O8nZKK7It4zv5DVVi1j9QfZv8KvuH+oZnDvr5HPlG1o7EcZvPCfiQtlW/FbyCX4zrorltNfo5lOUq7r8sjda6TrvMPqi8pMjqjc4qSuu7mm9ytL1keX9buycXNIVlvcY5n/2DZM3v9Z7r+H0itV77HI14Tfj53PkvXuszub0hSpGDPMGv8zfiKnOgUa0r8KM50M+3eDX8Vedo8OvExtH7wcxpGSOIBwAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="60" height="30">
+  <object name="0" type="portal" x="1888" y="416" width="32" height="32">
+   <properties>
+    <property name="" value=""/>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="6"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="60" height="30"/>
+ <objectgroup name="monsters" width="60" height="30"/>
+</map>

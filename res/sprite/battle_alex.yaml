@@ -1,0 +1,71 @@
+hitboxes:
+ - xpos: 20
+   ypos: 7
+   width: 60
+   height: 70
+   collision: true
+   multiplier: 1
+   
+run:
+  speed: 100
+  frames:
+    - res/sprite/alex/walking0.png
+    - res/sprite/alex/walking1.png
+    - res/sprite/alex/walking2.png
+    - res/sprite/alex/walking3.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/alex/standing0.png
+    - res/sprite/alex/standing1.png
+    - res/sprite/alex/standing2.png
+    - res/sprite/alex/standing3.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/alex/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/alex/standing0.png
+    - res/sprite/alex/standing1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/alex/standing0.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/alex/standing0.png
+    
+land:
+  speed: 10
+  frames:
+    - res/sprite/alex/standing0.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/alex/standing0.png
+
+cast:
+  speed: 10
+  frames:
+  - res/sprite/alex/attacking1.png
+  - res/sprite/alex/attacking2.png
+  - res/sprite/alex/attacking3.png
+  - res/sprite/alex/attacking4.png
+    
+melee:
+  speed: 200
+  frames:
+    - res/sprite/alex/casting0.png
+    - res/sprite/alex/casting1.png
+    - res/sprite/alex/casting2.png
+death:
+  speed: 200
+  frames:
+    - res/sprite/alex/dying0.png
+    - res/sprite/alex/dying1.png
+    - res/sprite/alex/dying2.png

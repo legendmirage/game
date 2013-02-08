@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="75" height="35" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="ID" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="sam_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/sam_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="913" name="factoryboss_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/factoryboss_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="925" name="Jackie_sprites" tilewidth="32" tileheight="32">
+  <image source="Jackie_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="937" name="elise_sprites" tilewidth="32" tileheight="32">
+  <image source="elise_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="949" name="shannon_sprites" tilewidth="32" tileheight="32">
+  <image source="../sprite/shannon_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="961" name="neutral" tilewidth="32" tileheight="32">
+  <image source="../sprite/rat/neutral.png" width="99" height="43"/>
+ </tileset>
+ <layer name="background" width="75" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2YIRLAMAzDwvqS/f+Lo4NjslMB0dgW2PV2ZuaILOX5QHdJR1e60lWOKwJ6v650RUP01lV2ZmtvXWVntvbWVXZmW2/fDLraltnaW1fZma2901z97aKrXa7ofyEit5PyPWy7u3GTrvi7Gzfpir9Loqu7N+mKp8HVC6YXEOQEKQAA
+  </data>
+ </layer>
+ <layer name="collision" width="75" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2YXU7CUBCFT0F8wx9wAYK+gaDsQkR+VgEqsgDfUVDX4KuGBbg+DjENhETtTYAZyPmSL+lNm9yT6aTpnRSAlBPhIMNfnjoSDjL8l08IIYQQQvgiSy8SemKU0QsdJK9VzSijF0Jq1TbIN+v7A/pJvwz2X8R7X13TOm3B5l0t4r2vtrVW6iv1VVI23VfDdNjznmpVgu++6tIefaQDg/2Xs2QiYJ+m6V40X9/z3gPtwy7rkD7TN/pusP9yljPW5ZwWaDGar0e8N6av8JHVK0+/XItkfAR+l4UQQgghdpV4tnhIj+gxzdE8/M3QrbPOzsdl/Jx/K7RKL+kV/M3QrbPGc40b2qC3tInNzTm+A/73rbPGc407rGZ2MFnjWWfVWUOJ5xov8D87WFfWKbzJ1LoEKQAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="75" height="35">
+  <properties>
+   <property name="layerID" value="portal"/>
+  </properties>
+  <object name="0" type="portal" x="1120" y="0" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="meetKid"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="75" height="35">
+  <object name="sam" type="npcs" x="1419" y="517" width="80" height="80">
+   <properties>
+    <property name="quest" value="Find kids and sauce"/>
+    <property name="scene" value="getSauceQuest"/>
+    <property name="scene1" value="getSauceInter"/>
+    <property name="scene2" value="questDone1"/>
+   </properties>
+  </object>
+  <object name="ogre" type="npcs" x="933" y="1032" width="80" height="80">
+   <properties>
+    <property name="quest" value="Remove Ogres"/>
+    <property name="scene" value="getOgres"/>
+    <property name="scene1" value="getOgresInter"/>
+    <property name="scene2" value="ogresDone"/>
+   </properties>
+  </object>
+  <object name="soldier" type="npcs" x="869" y="681" width="80" height="80">
+   <properties>
+    <property name="quest" value="Remove Remnant Soldiers"/>
+    <property name="scene" value="getSoldiers"/>
+    <property name="scene1" value="getSoldiersInter"/>
+    <property name="scene2" value="soldiersDone"/>
+   </properties>
+  </object>
+  <object name="dustling" type="npcs" x="1317" y="1001" width="80" height="80">
+   <properties>
+    <property name="quest" value="Remove Dustlings"/>
+    <property name="scene" value="getDustlings"/>
+    <property name="scene2" value="dustlingsDone"/>
+   </properties>
+  </object>
+  <object name="dustling" type="npcs" x="1317" y="1001" width="80" height="80">
+   <properties>
+    <property name="quest" value="Remove Dustlings"/>
+    <property name="scene" value="getDustlings"/>
+    <property name="scene1" value="getDustlingsInter"/>
+    <property name="scene2" value="dustlingsDone"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="75" height="35">
+  <properties>
+   <property name="layerID" value="monsters"/>
+  </properties>
+  <object name="monsterGroup0" x="1345" y="318" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

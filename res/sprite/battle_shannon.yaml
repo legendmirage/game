@@ -1,0 +1,85 @@
+# manually scaling down this sprite for now
+height: 100
+width: 105
+
+hitboxes:
+ - xpos: 40
+   ypos: 12
+   width: 30
+   height: 70
+   collision: true
+   multiplier: 1
+ - xpos: 35
+   ypos: 12
+   width: 40
+   height: 70
+   collision: false
+   multiplier: 1
+run:
+  speed: 100
+  frames:
+    - res/sprite/char1/run1.png
+    - res/sprite/char1/run2.png
+    - res/sprite/char1/run3.png
+    - res/sprite/char1/run4.png
+    - res/sprite/char1/run5.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/char1/idle1.png
+    - res/sprite/char1/idle2.png
+    - res/sprite/char1/idle3.png
+    - res/sprite/char1/idle4.png
+    - res/sprite/char1/idle5.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/char1/dash3.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/char1/jump1.png
+    - res/sprite/char1/jump2.png
+    - res/sprite/char1/jump3.png
+    - res/sprite/char1/jump4.png
+    - res/sprite/char1/jump5.png
+fall:
+  speed: 300
+  frames:
+    - res/sprite/char1/fall1.png
+    - res/sprite/char1/fall2.png
+air:
+  speed: 50
+  frames:
+    - res/sprite/char1/air1.png
+land:
+  speed: 10
+  frames:
+    - res/sprite/char1/land1.png
+    - res/sprite/char1/land2.png
+    - res/sprite/char1/land3.png
+    - res/sprite/char1/land4.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/char1/hit1.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/char1/attack1.png
+    - res/sprite/char1/attack2.png
+    - res/sprite/char1/attack3.png
+
+cast:
+  speed: 10
+  frames:
+    - res/sprite/char1/attack6.png
+    - res/sprite/char1/attack7.png
+death:
+  speed: 10
+  frames:
+    - res/sprite/char1/dying0.png
+    - res/sprite/char1/dying1.png
+    - res/sprite/char1/dying2.png
+    

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="24" height="20" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="mario"/>
+  <property name="name" value="Factory"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="../tilemap/tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="24" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NhYGBwoTJ2RcLUNnvUfNpjXO4CibtRYI4bFnFXNHFsbBccbFxqRs0fNX/U/FHzh4L5AJi2sGuABwAA
+  </data>
+ </layer>
+ <layer name="collision" width="24" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+NgYGDgoCHmZKAd4Bw1f9T8UfNHzR81f9R8GppPjXoQBtDrRgAV2mdXgAcAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="24" height="20">
+  <object name="0" type="portal" x="608" y="608" width="32" height="32">
+   <properties>
+    <property name="" value=""/>
+    <property name="toPortal" value="3"/>
+    <property name="toZone" value="0"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="576" y="608" width="32" height="32">
+   <properties>
+    <property name="" value=""/>
+    <property name="toPortal" value="3"/>
+    <property name="toZone" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="24" height="20"/>
+ <objectgroup name="monsters" width="24" height="20">
+  <object name="monsterGroup0" x="256" y="288" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="576" y="224" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="160" y="512" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="223" y="85" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="586" y="419" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="430" y="449" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="654" y="58" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

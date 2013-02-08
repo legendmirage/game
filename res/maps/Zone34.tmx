@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="32" tileheight="32">
+ <properties>
+     <property name="music" value="mario"/>
+  <property name="name" value="Tutorial"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="burning_town" tilewidth="32" tileheight="32">
+  <image source="burning_town.png" width="320" height="320"/>
+ </tileset>
+ <layer name="background" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3WsQ0AIAgFUYj7x3nczsKa0JDwJVdcqy/Q4GbmRe31qnqvOnz4FHxR+Gbst9uBD59i+P72neTvbp/6/PDN82U3U/cdpe5T3y8+fPh0fReafrgRwBIAAA==
+  </data>
+ </layer>
+ <layer name="collision" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA81YSW7DMAwsoM93vXQ9pOshXYGkK+AeDftW2G/quCgBZkJacmwnGWCgJJKtoURSVIqw84dCtQ1nqq1oTEltgxqfs38KdvF5D9wHD8BD8Ej16+c9yNy65d8aaJ01tRqZ0nkMnoCn4Bl4Dl6QTRqW3XrddKv7U+y0NF6CV+A1eAPegne0zhNDr9at16oIi2sm32uyaxLRK/Pfgw/gI/gEPoMvYXHMNCw/p+cqDK3SX5EO0TklGyx9DV7RvoHv4Af4CX6F5XFaj2iUudj38xbfssA2rIraWceMdDJiezk02NezYO+RYOr0tT3TBzX5Tmb4WQqG2lcLpbGnVl7ZFHgNG4hWS/smoXXkIT1u14lZJEbGQtucnDe67ucQ9vCcOrd4Z0As381H9E/PtypHt4XvLfPPWA03JLwaqq1+itVwQ4Lrzh+qBSzf82q4PkiNLT2uDLbveTXcvIdGL7Z4H/U4K3YaDV4NN0acdD0b1hWrqfvd9Z4xFGK5VHRt09nLd1fGmOdxyrv5TsYYs76Su2IMKfXUWOvo2Z93rKX4PX30ejmzLe95c3fZd7nH8P8v/E4vX61yl+0SyxXp0xr7+vEvc5HR7MASAAA=
+  </data>
+ </layer>
+ <objectgroup name="portal" width="40" height="30"/>
+ <objectgroup name="npcs" width="40" height="30"/>
+ <objectgroup name="monsters" width="40" height="30">
+  <object name="monsterGroup0" x="959" y="255" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="caracal0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="252" y="382" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="dustling0, kuma0 "/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1218" y="481" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="ogre0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

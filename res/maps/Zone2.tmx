@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="name" value="Forest 1"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DAQkAAAwEofv+pddjKLhqqqqqqqqqjx7+ij1jABkAAA==
+  </data>
+ </layer>
+ <layer name="collision" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+1YwQ2DMAyMmKSzMAmbdJLu2iI1khX57Ls4SFTqA7k02L4cZxvYWmuPz7EtsK3ofx6vrz0In+dkru63i36R74hlN3tRMc5ygHw9LAeIkeWocIByZFhewbq3t1kOlHvjrVd4ZjjIsD2cGPYeKTzPcIBye1gyjc/WTsQByu1hYXsEWwtMnVf5Y69DvSmrc4U/Zr8IM1rP6ny1XhSdepjH61EO1ipzYbZ+//NX6wd3mb9MXpQjw7Ji/jJ1XtFulWemzjNs1l45f5Gt6mUlFi9v/z2rFyaH0pu8+eFhuNv8HWP/+vztuVfNX2SZ/Xq2r6+av8iqObLaUGsm06HqO8tTplOrQ3uu+qp8If5s3HHP9lzZL4uFqUsmblS/qJcyWA4iDmsz/qpYGG1E72YKXyuweP7RuxniJcsZYWHmr/f8OPLX9efx4l3LYmHmb8SfjY94GblWsDDziNWCUk+V5xfVKvPjCizd11u3WriKl9O/Nfyc0//L+kQVC1rPvudY/qL+sUovrJ4sf17/yOr3tG9XoltmABkAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="40" height="40">
+  <object name="0" type="portal" x="1248" y="544" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="8"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="672" y="1248" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="4"/>
+   </properties>
+  </object>
+  <object name="2" type="portal" x="0" y="608" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="6"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="40" height="40"/>
+ <objectgroup name="monsters" width="40" height="40"/>
+</map>

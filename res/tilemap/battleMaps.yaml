@@ -1,0 +1,21 @@
+files:
+  maps: 
+    - res/tilemap/BattleMapForest1.tmx
+    - res/tilemap/BattleMapForest2.tmx
+    - res/tilemap/BattleMapForest3.tmx
+    - res/tilemap/BattleMapForest4.tmx
+    - res/tilemap/BattleMapForest5.tmx
+    - res/tilemap/BattleMapForest6.tmx
+    - res/tilemap/BattleMapForest7.tmx
+    - res/tilemap/BattleMapBeach1.tmx
+    - res/tilemap/BattleMapBeach2.tmx
+    - res/tilemap/BattleMapBeach3.tmx
+    - res/tilemap/BattleMapBeach4.tmx
+    - res/tilemap/BattleMapBeach5.tmx
+    - res/tilemap/BattleMapBeach6.tmx
+    - res/tilemap/BattleMapOpera1.tmx
+    - res/tilemap/BattleMapOpera2.tmx
+    - res/tilemap/BattleMapOpera3.tmx
+    - res/tilemap/BattleMapOpera4.tmx
+    - res/tilemap/BattleMapOpera5.tmx
+

@@ -1,0 +1,67 @@
+hitboxes:
+ - xpos: 77
+   ypos: 35
+   width: 100
+   height: 190
+   collision: true
+   multiplier: 1
+   
+run:
+  speed: 100
+  frames:
+    - res/sprite/ogre/walk1.png
+    - res/sprite/ogre/walk2.png
+    - res/sprite/ogre/walk3.png
+    - res/sprite/ogre/walk4.png
+    - res/sprite/ogre/walk5.png
+    - res/sprite/ogre/walk6.png
+    - res/sprite/ogre/walk7.png
+    - res/sprite/ogre/walk8.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/ogre/idle1.png
+    - res/sprite/ogre/idle2.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/ogre/attack1.png
+    - res/sprite/ogre/attack2.png
+    - res/sprite/ogre/attack3.png
+cast:
+  speed: 10
+  frames:
+    - res/sprite/ogre/cast1.png
+    - res/sprite/ogre/cast2.png
+    - res/sprite/ogre/cast3.png
+    - res/sprite/ogre/cast4.png
+
+death:
+  speed: 10
+  frames:
+    - res/sprite/ogre/death1.png
+    - res/sprite/ogre/death2.png
+    
+steam:
+ - width: 32
+   height: 60
+   yoffset: -45
+   
+ - width: 47
+   height: 90
+   xoffset: 25
+   r_xoffset: 25
+   yoffset: 65
+   
+ - width: 32
+   height: 60
+   xoffset: 75
+   r_xoffset: 75
+   yoffset: 15
+   
+ - width: 40
+   height: 75
+   xoffset: -40
+   r_xoffset: -70
+   yoffset: 20

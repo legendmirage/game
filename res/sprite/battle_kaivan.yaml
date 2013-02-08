@@ -1,0 +1,72 @@
+hitboxes:
+ - xpos: 45
+   ypos: 30
+   width: 65
+   height: 100
+   collision: true
+   multiplier: 1
+
+run:
+  speed: 120
+  frames:
+    - res/sprite/kaivan/walking0.png
+    - res/sprite/kaivan/walking1.png
+    - res/sprite/kaivan/walking2.png
+    - res/sprite/kaivan/walking4.png
+    - res/sprite/kaivan/walking5.png
+    - res/sprite/kaivan/walking6.png
+    - res/sprite/kaivan/walking7.png
+    - res/sprite/kaivan/walking8.png
+    - res/sprite/kaivan/walking9.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/kaivan/standing0.png
+    - res/sprite/kaivan/standing1.png
+    - res/sprite/kaivan/standing2.png
+    - res/sprite/kaivan/standing3.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/kaivan/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/kaivan/jumping0.png
+    - res/sprite/kaivan/jumping1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/kaivan/jumping2.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/kaivan/jumping1.png
+    
+land:
+  speed: 10
+  frames:  
+    - res/sprite/kaivan/jumping3.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/kaivan/standing0.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/kaivan/attacking0.png
+    - res/sprite/kaivan/attacking1.png
+    - res/sprite/kaivan/attacking2.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/kaivan/casting0.png
+    - res/sprite/kaivan/casting1.png
+death:
+  speed: 200
+  frames:
+    - res/sprite/kaivan/dying.png

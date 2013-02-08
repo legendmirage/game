@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="spire"/>
+  <property name="name" value="Dining Hall 2nd floor"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="factoryboss_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/factoryboss_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NlYGBwHcU0x9xQPNDuGMWDL94BYVnDaIQDAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="15" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgoC2wYkblWzNjV4cNRADVJgHpZCBOAeJIEvU2AOlGIG4iUm8bVE0ZkJ4HpOcD8QIgLoeKc0AxCNDTX8j2kuMvGMDlL0rAUIpfGCAlHDgYUMOfFMBJpDoAXu0CHoQDAAA=
+  </data>
+ </layer>
+ <objectgroup name="portal" width="15" height="15">
+  <object name="0" type="portal" x="192" y="448" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="21"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="0" y="192" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="23"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="15" height="15">
+  <object name="raymond" type="npcs" x="199" y="104" width="80" height="80">
+   <properties>
+    <property name="quest" value="Acquire precious gems"/>
+    <property name="scene" value="Quest12"/>
+    <property name="scene1" value="Quest12Inter"/>
+    <property name="scene2" value="Quest12Done"/>
+    <property name="scene3" value="Quest12Over"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="15" height="15">
+  <object name="monsterGroup0" x="64" y="416" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Kuma1,Nightshade1,Nightshade1"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="64" y="32" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Caracal2,Caracal2,Caracal2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="416" y="224" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Bookman0,Bookman0,Bookman0,Kuma1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

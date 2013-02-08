@@ -1,0 +1,39 @@
+hitboxes:
+ - xpos: 5
+   ypos: 5
+   width: 80
+   height: 35
+   collision: false
+   multiplier: 1
+ - xpos: 5
+   ypos: 5
+   width: 80
+   height: 22
+   collision: true
+   multiplier: 1
+
+run:
+  speed: 100
+  frames:
+    - res/sprite/rat/neutral.png
+    - res/sprite/rat/charge.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/rat/neutral.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/rat/hit.png
+melee:
+  speed: 10
+  frames:
+    - res/sprite/rat/charge.png
+death:
+  speed: 10
+  frames:
+    - res/sprite/rat/death.png
+steam:    
+ - width: 32
+   height: 60
+   yoffset: -25

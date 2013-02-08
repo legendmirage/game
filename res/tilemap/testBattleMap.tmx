@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="24" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="ID" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="bottom1" tilewidth="32" tileheight="32">
+  <image source="forest/bottom1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="902" name="leftSide" tilewidth="32" tileheight="32">
+  <image source="forest/leftSide.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="903" name="tile1" tilewidth="32" tileheight="32">
+  <image source="forest/tile1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="904" name="grassTile1" tilewidth="32" tileheight="32">
+  <image source="forest/grassTile1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="905" name="bottom2" tilewidth="32" tileheight="32">
+  <image source="forest/bottom2.png" width="32" height="32"/>
+ </tileset>
+ <layer name="platform" width="100" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3YwQnAMAwEQYNqN066dgV+KKBgwQxsDQc3BgAAQA9P5KPOG/kAurExd5lxDuAPduEudgGo8OV/Ul1Lkpq0AUzpqdyAJQAA
+  </data>
+ </layer>
+ <objectgroup name="spawns" width="100" height="24">
+  <object name="playerSpawn" x="47" y="502" width="75" height="122">
+   <properties>
+    <property name="spawnID" value="0"/>
+   </properties>
+  </object>
+  <object name="enemySpawn" x="3070" y="515" width="73" height="115">
+   <properties>
+    <property name="spawnID" value="1"/>
+   </properties>
+  </object>
+  <object x="88" y="512" width="1"/>
+ </objectgroup>
+</map>

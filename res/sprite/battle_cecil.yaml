@@ -1,0 +1,89 @@
+# manually scaling down this sprite for now
+height: 100
+width: 100
+
+hitboxes:
+ - xpos: 38
+   ypos: 5
+   width: 25
+   height: 75
+   collision: true
+   multiplier: 1
+
+run:
+  speed: 80
+  frames:
+    - res/sprite/mainchar/run0.png
+    - res/sprite/mainchar/run1.png
+    - res/sprite/mainchar/run2.png
+    - res/sprite/mainchar/run3.png
+    - res/sprite/mainchar/run4.png
+    - res/sprite/mainchar/run6.png
+    - res/sprite/mainchar/run7.png 
+    - res/sprite/mainchar/run8.png
+    - res/sprite/mainchar/run9.png
+    - res/sprite/mainchar/run10.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/mainchar/standing_0000_frame5.png
+    - res/sprite/mainchar/standing_0001_frame4.png
+    - res/sprite/mainchar/standing_0002_frame3.png
+    - res/sprite/mainchar/standing_0003_frame2.png
+    - res/sprite/mainchar/standing_0004_frame1.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/mainchar/dash.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/mainchar/standing_0000_frame5.png
+    - res/sprite/mainchar/jumping_0002_Layer-2-frame1.png
+fall:
+  speed: 300
+  frames:
+    - res/sprite/mainchar/jumping_0001_Layer-2-frame2.png
+air:
+  speed: 50
+  frames:
+    - res/sprite/mainchar/jumping_0001_Layer-2-frame2.png
+land:
+  speed: 10
+  frames:
+    - res/sprite/mainchar/jumping_0000_Layer-2-frame3.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/mainchar/hit.png
+
+cast:
+  speed: 10
+  frames:
+    - res/sprite/mainchar/attacking_0000_frame7_c4.png
+    - res/sprite/mainchar/attacking_0001_frame6_c3.png
+    - res/sprite/mainchar/attacking_0002_frame5_c2.png
+    - res/sprite/mainchar/attacking_0003_frame4_c1.png
+
+death:
+  speed: 10
+  frames:
+    - res/sprite/mainchar/dying0.png
+    - res/sprite/mainchar/dying1.png
+    - res/sprite/mainchar/dying2.png
+    - res/sprite/mainchar/dying3.png
+    - res/sprite/mainchar/dying2.png
+    - res/sprite/mainchar/dying3.png
+    - res/sprite/mainchar/dying2.png
+    - res/sprite/mainchar/dying3.png
+
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/mainchar/casting_0000_frame3.png
+    - res/sprite/mainchar/casting_0001_frame2.png
+
+  startframes:
+    - res/sprite/mainchar/casting_0002_frame1.png
+  

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="11" height="11" tilewidth="32" tileheight="32">
+ <properties>
+   <property name="music" value="spire"/>
+  <property name="name" value="Sitting room"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NlYGBwHcKYnRk3ppfawY4B66KX8+QBAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgYGDQZGZgSALiZCBOAWIQQOZrQsVAwB3IbgDiRiBugooj892R1FIb+DLSzmxagMHiXgC7WnhR5AEAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="11" height="11">
+  <object name="0" type="portal" x="320" y="160" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="2"/>
+    <property name="toZone" value="25"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="320" y="128" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="2"/>
+    <property name="toZone" value="25"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="320" y="192" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="2"/>
+    <property name="toZone" value="25"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="11" height="11"/>
+ <objectgroup name="monsters" width="11" height="11">
+  <object name="monsterGroup0" x="160" y="160" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="0"/>
+    <property name="monsters" value="Gilgamesh"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

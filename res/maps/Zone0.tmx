@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="35" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="mario"/>
+  <property name="name" value="Odell"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="sam_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/sam_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="913" name="factoryboss_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/factoryboss_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="925" name="ben_front" tilewidth="32" tileheight="32">
+  <image source="../npcs/ben_front.png" width="32" height="32"/>
+ </tileset>
+ <layer name="background" width="60" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3WsQ3AMAhEUTpP4v1XTJMBLIHFcf7Fb8FPiaOsiFhF7T/VedXh1ZqHV+t8eLXawuH1fvadXuedeL134vXeiffebLwa3tf+N/B6ezN3srvTc+HFO8lb/e3AOyu8ufem24M3550eXu/weqfi/QCdKHTS0CAAAA==
+  </data>
+ </layer>
+ <layer name="collision" width="60" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2WOXLUUBCGWzKQkTlja5aMgoATwMAB4AIgSKhiOwAFiASKLSLDIBLWG9hgJ6xHMODEbNdg+VWlLv16njfSyDNTkmb+8ldaut9T/+o3z1IRURBmRz5PjwnogSi7jui+xey+yc21o3rm4jntOqH5wgweyzW64914SPHYqYXzNItHWUzpGNPz7b4p7pPLtfni/AyeTzO4DrdGdWIcV8pLHF+c15Nify3H3pU93+KmRIrvyd67Sv81Y72M6D7PJ1J8v9w/93mxE4/pntURO+c2j81tz3brtpjlmdy16a4Z9qZSlOvTlFBM+4xL6Ghx85VQvkr+vlWKvxuRjfPyOPXkacnRFMl45XpJxX2aBqnkvZ8G8V49DVLZ+Lvqsmyfn5b1bPv8oPW8HRyqyPwYa3X1DDwHL8BL8Aq8LhnD32o+nZLqfo/UL39ovQPvwQfwEXwCn0vGqOTfaj4N4/dkzdrraB18Bz/AT/AL/C4Z0+b+/gF/wb/0IsAfCIPBY1Ta298d8LYT7AK7wR6gJX5tfw4H5DS1v6mues59sv1ZB+Q0tb919IhY8OQ0ub/DapFY8uQclO70t4rf82Ar9oFtYA5sCfLrC4hdBJfAZXBlIlXXVxW/t8B+eDsA9oJ9QX59B7G74B64Dx5MpOr6quLXp2H3xiZoM35dPZzbfD3j1ij9tkHs93BQ/r9plLpdcz0cRZ3HQA8cBydKvqlYix6a3OvT8HcGROAsONdhv+m+eA3+roMbIAY3O+w31QL8PQZPQAKedtzvEvy9AW/BMlgZgV/eu6p8Y09K6XpeRW1fwFfwDayNwG8b+15FM78zvzO/7dV/pYUs09AgAAA=
+  </data>
+ </layer>
+ <objectgroup name="portal" width="60" height="35">
+  <properties>
+   <property name="layerID" value="portal"/>
+  </properties>
+  <object name="0" type="portal" x="608" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="2"/>
+    <property name="toZone" value="3"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="1248" y="0" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="MeetFakeHaitao"/>
+    <property name="toPortal" value="2"/>
+    <property name="toZone" value="4"/>
+   </properties>
+  </object>
+  <object name="2" type="portal" x="1600" y="480" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="31"/>
+   </properties>
+  </object>
+  <object name="3" type="portal" x="544" y="672" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="32"/>
+   </properties>
+  </object>
+  <object name="4" type="portal" x="1408" y="864" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="33"/>
+   </properties>
+  </object>
+  <object name="4" type="portal" x="1408" y="896" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="33"/>
+   </properties>
+  </object>
+  <object name="2" type="portal" x="1568" y="480" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="31"/>
+   </properties>
+  </object>
+  <object name="3" type="portal" x="512" y="672" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="32"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="640" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="2"/>
+    <property name="toZone" value="3"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="1280" y="0" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="MeetFakeHaitao"/>
+    <property name="toPortal" value="2"/>
+    <property name="toZone" value="4"/>
+   </properties>
+  </object>
+  <object type="portal" x="864" y="864" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="Start"/>
+   </properties>
+  </object>
+  <object type="portal" x="864" y="1088" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="NoGoHome"/>
+   </properties>
+  </object>
+  <object type="portal" x="896" y="1088" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="NoGoHome"/>
+   </properties>
+  </object>
+  <object type="portal" x="832" y="1088" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="NoGoHome"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="60" height="35">
+  <object name="sam" type="npcs" x="968" y="744" width="80" height="80">
+   <properties>
+    <property name="quest" value="Kill the Steam spreader"/>
+    <property name="scene" value="Quest2"/>
+    <property name="scene1" value="Quest2Inter"/>
+    <property name="scene2" value="Quest2Done"/>
+    <property name="scene3" value="Quest2Over"/>
+   </properties>
+  </object>
+  <object name="factory" type="npcs" x="584" y="680" width="80" height="80">
+   <properties>
+    <property name="quest" value="Clean up the Factory"/>
+    <property name="scene" value="Quest1"/>
+    <property name="scene1" value="Quest1Inter"/>
+    <property name="scene2" value="Quest1Done"/>
+    <property name="scene3" value="Quest1Over"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="60" height="35">
+  <properties>
+   <property name="layerID" value="monsters"/>
+  </properties>
+ </objectgroup>
+</map>

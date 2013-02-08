@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="stone" tilewidth="32" tileheight="32">
+  <image source="stone.jpg" width="259" height="194"/>
+ </tileset>
+ <tileset firstgid="49" name="factoryboss_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/factoryboss_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="61" name="sam_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/sam_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="73" name="pavement" tilewidth="32" tileheight="32">
+  <image source="pavement.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="74" name="building3" tilewidth="32" tileheight="32">
+  <image source="building.png" width="256" height="160"/>
+ </tileset>
+ <tileset firstgid="114" name="grass1" tilewidth="32" tileheight="32">
+  <image source="grass2.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="115" name="building1" tilewidth="32" tileheight="32">
+  <image source="building1.png" width="160" height="256"/>
+ </tileset>
+ <tileset firstgid="155" name="building2" tilewidth="32" tileheight="32">
+  <image source="building2.png" width="256" height="160"/>
+ </tileset>
+ <tileset firstgid="195" name="building4" tilewidth="32" tileheight="32">
+  <image source="building4.png" width="160" height="256"/>
+ </tileset>
+ <tileset firstgid="235" name="building3_side" tilewidth="32" tileheight="32">
+  <image source="building3_side.png" width="64" height="160"/>
+ </tileset>
+ <tileset firstgid="245" name="portal_town" tilewidth="32" tileheight="32">
+  <image source="portal_town.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="251" name="portal_forest" tilewidth="32" tileheight="32">
+  <image source="portal_forest.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="257" name="tree4" tilewidth="32" tileheight="32">
+  <image source="tree4.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="258" name="grave" tilewidth="32" tileheight="32">
+  <image source="grave.png" width="32" height="32"/>
+ </tileset>
+ <layer name="background" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3VQQqAMAwF0ay9Wa/T+y9EcCEFkappfsIIgxuhedRqN7Pu3HG18+69lmftUvQsOHCoVdGR2VLRET0LDhxq4dCp4jc3s2O0RM+CA4daOLTK5hj/FTNFz44DBw4cfzmenvuyNtFds+9+xPl4M6/iOceBA4eOw2sOHDi8HFsRR4X9UAmHVji0WuHYAYC0bF4QJwAA
+  </data>
+ </layer>
+ <layer name="collision" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3YW07CQBiG4ZalsAMWwAYAEQHxxMkDIOBx3YKIuABevEFJSGwy9p8p35s8aS9I889FZ0ij6P+L49/XUMvKOpTfvWFmPYSD5ni3HsJBC3xYD+GgJT6th3DQCl/WQyhlmM4Iv9IZ4Vc6I9xWtB5AKfXd5vtDVr5B/HUdIa65hDIqOEIVx6jhxHCupNXRQBOnaOEM57hIaYaCg2dc4gptdNBFD31cO3h+Wt3gFncYYIgR7jE2nCtpE0zxgEc84RkveN35bYjvvwo77d9+pf3br5Ls3yrb5X9c991bpv8Pyqes3we1LRdvKaUOtzWjZ8BYECcAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="50" height="50">
+  <properties>
+   <property name="id" value="portal"/>
+  </properties>
+  <object name="0" type="portal" x="832" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="896" y="192" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="2"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="896" y="224" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="2"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="768" y="448" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="2"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="768" y="480" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="50" height="50">
+  <object name="sam" type="npcs" x="169" y="554" width="80" height="80">
+   <properties>
+    <property name="quest" value="Kill Three Rats"/>
+    <property name="scene" value="getQuest1"/>
+    <property name="scene2" value="questDone1"/>
+   </properties>
+  </object>
+  <object name="factory" type="npcs" x="681" y="812" width="80" height="80">
+   <properties>
+    <property name="quest" value="Kill Two Goblins"/>
+    <property name="scene" value="getQuest2"/>
+    <property name="scene2" value="questDone2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

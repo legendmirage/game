@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="11" height="11" tilewidth="32" tileheight="32">
+ <properties>
+     <property name="music" value="mario"/>
+  <property name="name" value="House"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NlYGBwpSJmIEGtDZXtHsXYMQDCsziE5AEAAA==
+  </data>
+ </layer>
+ <layer name="collision" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+NgYGDgIBJzMuAHnEjqiFELowmpRddDC7WkuGEwqCU2zkAYALbC0gHkAQAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="11" height="11">
+  <object name="0" type="portal" x="0" y="128" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="4"/>
+    <property name="toZone" value="0"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="288" y="64" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="35"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="0" y="160" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="4"/>
+    <property name="toZone" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="11" height="11"/>
+ <objectgroup name="monsters" width="11" height="11"/>
+</map>

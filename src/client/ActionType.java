@@ -1,0 +1,31 @@
+package client;
+
+/** Any conceivable action that a player can do to change the global game state. */
+public enum ActionType {
+	MOVE_LEFT,
+	MOVE_RIGHT,
+	MOVE_UP,
+	MOVE_DOWN,
+	STOP_MOVING,
+	STOP_FLYING,
+	START_MOONWALK,
+	STOP_MOONWALK,
+	JUMP,
+	ABILITY,
+	DASH,
+	BASIC_ATTACK,
+	RETREAT,
+	OPEN_MENU,
+	USE,
+	CRAFT,
+	ENTER,
+	ACT,
+	BUY,
+	EQUIP_PASSIVE,
+	EQUIP_ACTIVE,
+	DO_NOTHING,
+	GODMODE,
+	DEBUG,
+	SPAWN_MONSTER,
+	FLUSH_UDP, 
+}

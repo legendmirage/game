@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="name" value="Jubilee Forest"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="jello_front" tilewidth="32" tileheight="32">
+  <image source="../sprite/jello_front.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="909" name="child_sprites" tilewidth="32" tileheight="32">
+  <image source="child_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="20" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NkYGBgHMWjeBSP4iGAATEAE1WwBAAA
+  </data>
+ </layer>
+ <layer name="collision" width="20" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA9WOQQoAIAgEF1/S/19ZhwKR1cxTCuG0aYwAGOvI7pq9jDHbs7NexpjtdfODyqA645vfa0V+lYr8KtXZT8ycx/oe+WV5mL8jvwwfP/v+s98E31LZ37AEAAA=
+  </data>
+ </layer>
+ <objectgroup name="portal" width="20" height="15">
+  <object name="0" type="portal" x="512" y="448" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="LucasCaught"/>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="8"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="20" height="15"/>
+ <objectgroup name="monsters" width="20" height="15">
+  <object name="monsterGroup0" x="512" y="352" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Caracal"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

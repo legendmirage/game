@@ -1,0 +1,102 @@
+hitboxes:
+ - xpos: 77
+   ypos: 30
+   width: 100
+   height: 190
+   collision: true
+   multiplier: 1
+run:
+  speed: 90
+  frames:
+    - res/sprite/aurelia/walking0.png
+    - res/sprite/aurelia/walking1.png
+    - res/sprite/aurelia/walking2.png
+    - res/sprite/aurelia/walking3.png
+    - res/sprite/aurelia/walking4.png
+    - res/sprite/aurelia/walking5.png
+    - res/sprite/aurelia/walking6.png
+    - res/sprite/aurelia/walking7.png
+idle:
+  speed: 300
+  frames:
+    - res/sprite/aurelia/standing0.png
+    - res/sprite/aurelia/standing1.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/aurelia/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/aurelia/standing0.png
+    - res/sprite/aurelia/standing1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/aurelia/standing0.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/aurelia/standing0.png
+    
+land:
+  speed: 10
+  frames:
+    - res/sprite/aurelia/standing0.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/aurelia/standing0.png
+
+melee:
+  speed: 10
+  frames:
+  - res/sprite/aurelia/attacking0.png
+  - res/sprite/aurelia/attacking1.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/aurelia/casting0.png
+    - res/sprite/aurelia/casting1.png
+    - res/sprite/aurelia/casting2.png
+    - res/sprite/aurelia/casting3.png
+    - res/sprite/aurelia/casting4.png
+special:
+  speed: 200
+  frames:
+    - res/sprite/aurelia/attackCast0.png
+    - res/sprite/aurelia/attackCast1.png
+    - res/sprite/aurelia/attackCast2.png
+    - res/sprite/aurelia/attackCast3.png
+death:
+  speed: 200
+  frames:
+    - res/sprite/aurelia/standing0.png
+    - res/sprite/aurelia/dying0.png
+    - res/sprite/aurelia/dying1.png
+    
+steam:
+ - width: 47
+   height: 90
+   yoffset: -25
+   
+ - width: 47
+   height: 90
+   xoffset: 25
+   r_xoffset: 25
+   yoffset: 45
+   
+ - width: 32
+   height: 60
+   xoffset: 75
+   r_xoffset: 75
+   yoffset: 15
+   
+ - width: 32
+   height: 60
+   xoffset: -40
+   r_xoffset: -70
+   yoffset: 20

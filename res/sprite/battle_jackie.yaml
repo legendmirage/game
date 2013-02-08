@@ -1,0 +1,85 @@
+
+height: 100
+width: 100
+
+hitboxes:
+ - xpos: 20
+   ypos: 5
+   width: 50
+   height: 75
+   collision: true
+   multiplier: 1
+run:
+  speed: 100
+  frames:
+    - res/sprite/jackie/walking0.png
+    - res/sprite/jackie/walking1.png
+    - res/sprite/jackie/walking2.png
+    - res/sprite/jackie/walking3.png
+    - res/sprite/jackie/walking4.png
+    - res/sprite/jackie/walking5.png
+    - res/sprite/jackie/walking6.png
+    - res/sprite/jackie/walking7.png
+    - res/sprite/jackie/walking8.png
+    - res/sprite/jackie/walking9.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/jackie/standing0.png
+    - res/sprite/jackie/standing1.png
+    - res/sprite/jackie/standing2.png
+    - res/sprite/jackie/standing3.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/jackie/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/jackie/jumping0.png
+    - res/sprite/jackie/jumping1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/jackie/jumping2.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/jackie/jumping1.png
+    
+land:
+  speed: 10
+  frames:  
+    - res/sprite/jackie/jumping3.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/jackie/hit.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/jackie/casting0.png
+    - res/sprite/jackie/casting1.png
+    - res/sprite/jackie/casting2.png
+    - res/sprite/jackie/casting3.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/jackie/casting0.png
+    - res/sprite/jackie/casting1.png
+    - res/sprite/jackie/casting2.png
+    - res/sprite/jackie/casting3.png
+death:
+  speed: 200
+  frames:
+    - res/sprite/jackie/dying0.png
+    - res/sprite/jackie/dying1.png
+    - res/sprite/jackie/dying2.png
+    - res/sprite/jackie/dying1.png
+    - res/sprite/jackie/dying2.png
+    - res/sprite/jackie/dying1.png
+    - res/sprite/jackie/dying2.png

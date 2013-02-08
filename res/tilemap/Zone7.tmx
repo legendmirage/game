@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="35" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="name" value="Odell"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="sam_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/sam_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="913" name="factoryboss_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/factoryboss_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="925" name="lucas_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/lucas_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="937" name="ben_front" tilewidth="32" tileheight="32">
+  <image source="../npcs/ben_front.png" width="32" height="32"/>
+ </tileset>
+ <layer name="background" width="60" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3WsQkAIAwF0XSZxP1XtLUSIYaY7xXXGh+o6GbmRESbxlL1XvDmeivCizfLqzwTr/ZMvNoz8eatjfcN72//Dbza3sidrO50X3jxdvLefjvw9gpv7NxUe/DGvN3Dqx1e7V7xTqcmGy/QIAAA
+  </data>
+ </layer>
+ <layer name="collision" width="60" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2WyW7UQBCG2w5w45YbW7PcEBx4AjA8ALwAOFyQ2B4AEcwFxHbiRsC5sOYJEpYLWx6B7cISXoPlG2lKU5Tc0Mk4xmP513xqd1dNdf+uGc+kzjkP6XDU14OxhAzy4TxX6xKT9czk2NEFaumaMi9NLDXv1We077fxVMW1v8zkDcZCefFqLNT+3lwXFbl+6Df/S1zvYWPenMOe0ZuYjnuVZ31Z/7q/kiP3Sva3970090nuu1PxzNRyKj8f4lSscNX9lRzZrzDxQq1Jf+VMUlfqSG29t/2c5CrPq5j9PEpNXTtTc6fWq1SqmOxj4zJKvHCj753O13uU7k/Zul6NPpDnA6NVHlivS9ZLr169enVNm2FfJNPrsP/CVPX6fXgAD+ERPIYnNex3zMX7PVDDfrF6Ca/gNbyBt7BcQ93V+D1aw36x+gxf4Ct8gxX4XkPdtvb3B/yEX4NJwgvSZPy6be3vFrxthW2wHXaAb9hvk/1dL7W1v1rzgWe41R3FXCCnS/1dVCwFcva69vc3VjF+T8FGngObYAo2JKP5aWJn4Cycg/ONnHrtivF7BXbjbQ/shF3JaH6N2HW4ATfhViOnXrti/IZ0IXDdZo3j92rFM/F25HPyf2kcv5Mo7Xd/8u/fpjboIOc8BBkchiOr+E+1GKDNvT6OvxOQwwyc7Ljfi/ibhUtQwOWO+53D3124ByXMd9zvEv6ewjN4Di9q8KufXTH/sZvUO872Hj7AR/hUg99J7HuMer+9397v5Oo3NMyVY9AgAAA=
+  </data>
+ </layer>
+ <objectgroup name="portal" width="60" height="35">
+  <properties>
+   <property name="layerID" value="portal"/>
+  </properties>
+  <object name="0" type="portal" x="512" y="672" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="MeetAlma"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="4"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="864" y="0" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="Caracal"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="7"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="544" y="672" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="MeetAlma"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="4"/>
+   </properties>
+  </object>
+  <object type="portal" x="512" y="704" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="MeetSam"/>
+    <property name="quest" value="Find Haitao"/>
+   </properties>
+  </object>
+  <object type="portal" x="544" y="704" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="MeetSam"/>
+    <property name="quest" value="Find Haitao"/>
+   </properties>
+  </object>
+  <object type="portal" x="864" y="1088" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="NoGoHome"/>
+   </properties>
+  </object>
+  <object type="portal" x="896" y="1088" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="NoGoHome"/>
+   </properties>
+  </object>
+  <object type="portal" x="832" y="1088" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="NoGoHome"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="60" height="35">
+  <object name="factory" type="npcs" x="617" y="681" width="80" height="80">
+   <properties>
+    <property name="" value=""/>
+    <property name="scene" value="FactoryDone"/>
+   </properties>
+  </object>
+  <object name="haitao" type="npcs" x="1574" y="486" width="80" height="80">
+   <properties>
+    <property name="quest" value="Jubilee Forest"/>
+    <property name="scene" value="MeetFakeHaitao"/>
+    <property name="scene1" value="MeetFakeHaitaoInter"/>
+   </properties>
+  </object>
+  <object name="ben" type="npcs" x="1290" y="296" width="80" height="80">
+   <properties>
+    <property name="" value=""/>
+    <property name="scene" value="Shop"/>
+   </properties>
+  </object>
+  <object name="sam" type="npcs" x="454" y="680" width="80" height="80">
+   <properties>
+    <property name="quest" value="Find Haitao"/>
+    <property name="scene" value="MeetSam"/>
+    <property name="scene1" value="SamInter"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="60" height="35">
+  <properties>
+   <property name="layerID" value="monsters"/>
+  </properties>
+ </objectgroup>
+</map>

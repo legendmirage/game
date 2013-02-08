@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="24" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="name" value="Factory"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="alma_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/alma_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="24" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NhYGBwBWI3IHahEZsbimll/ih7lD3KHmUPRzYApWd1/aAFAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="24" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+NgYGDgoCHmZEAAZDY1ACeSmTD7aGU+LcCo+aPmj5o/9M2nZdkJAG5XRBCgBQAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="24" height="15">
+  <object name="0" type="portal" x="64" y="32" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="24" height="15"/>
+ <objectgroup name="monsters" width="24" height="15">
+  <object name="monsterGroup0" x="303" y="133" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Tea Cup,Dustling, Tea Cup, Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="70" y="249" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Tea Cup,Dustling,Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="602" y="305" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Tea Cup,Dustling,Tea Cup"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

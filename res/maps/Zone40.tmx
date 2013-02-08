@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="11" height="11" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="mario"/>
+  <property name="name" value="House 2nd floor"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="factoryboss_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/factoryboss_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NlYGBwpRG2oaHZo5h4DACnaJ5Z5AEAAA==
+  </data>
+ </layer>
+ <layer name="collision" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+NkYGDgIAJzQjExAFktIT0wtRwkqCXVDfRU28ZMPzcQG28AdHhlSuQBAAA=
+  </data>
+ </layer>
+ <objectgroup name="portal" width="11" height="11">
+  <object name="0" type="portal" x="32" y="64" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="36"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="11" height="11">
+  <object name="june" type="npcs" x="202" y="201" width="80" height="80">
+   <properties>
+    <property name="quest" value="Acquire bottles for instrument"/>
+    <property name="scene" value="Quest11"/>
+    <property name="scene1" value="Quest11Inter"/>
+    <property name="scene2" value="Quest11Done"/>
+    <property name="scene3" value="Quest11Over"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="11" height="11"/>
+</map>

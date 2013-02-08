@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="60" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="ID" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="grave" tilewidth="32" tileheight="32">
+  <image source="grave.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="902" name="elise_sprites" tilewidth="32" tileheight="32">
+  <image source="elise_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="50" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DwQkAAAwDoSP7D90x+lFw1VRVVVVVVVVVVVVV9fkBZnDd2OAuAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="50" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3VSw7DIAwEUKScpBfpTXKRKvteu5tWqiiqxuMBHOKRvAMSeHy2UspGVCH79aobWcXRt0ex81d7sInmYc2j+gf1+tSZ7aFKL496/KgeqvtKFdZDdV+1otrjsz1Ue3wVD0UieCiSHtf2sN47bPX2sN47bKVHeqRHenxnFQ9FIngocmWPA2hzBo8DaNNjr44K4uGpUUmP83kgdwTroTJFPJA7gvVQmf7zGBHE424cZ8beRjyQeZzBw3rOonpYz9kMD+tdWKfVZobH3viuxaXVRvEuWPt43yPEg9mv1j7e9yiax05+N5oHek6Q783wQPtG90D7psdaHtZ4PJBxkHbMGtbxeCDjIO3YNfSeKU+UHt4z5Ul6/OZqHt73B63eHt73By3FWkT16FV1nu/JpUcMj0/SYz2PF4/NFlTgLgAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="50" height="60">
+  <object name="0" type="portal" x="448" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="50" height="60">
+  <object name="elise" type="npc" x="975" y="1741" width="67" height="70">
+   <properties>
+    <property name="quest" value="Remove Dustlings"/>
+    <property name="scene" value="Zone1"/>
+    <property name="scene1" value="Zone1Inter"/>
+    <property name="scene2" value="Zone1End"/>
+   </properties>
+  </object>
+  <object name="healthrecipe" type="npc" x="1457" y="80" width="67" height="70">
+   <properties>
+    <property name="recipe" value="Health Potion"/>
+    <property name="scene" value="Tombstone1"/>
+    <property name="scene1" value="TombstoneInter"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="50" height="60">
+  <object name="monsterGroup0" x="1342" y="1185" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="864" y="1056" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="288" y="576" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="256" y="1600" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="256" y="1088" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="448" y="1344" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1120" y="96" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1408" y="384" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="704" y="160" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="256" y="192" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="800" y="1472" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1312" y="896" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="576" y="768" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="928" y="384" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1376" y="1600" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Dustling"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

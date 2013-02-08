@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="10" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="stone" tilewidth="32" tileheight="32">
+  <image source="stone.jpg" width="259" height="194"/>
+  <tile id="1">
+   <properties>
+    <property name="WallType" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="49" name="grass" tilewidth="32" tileheight="32">
+  <image source="grass.jpg" width="259" height="194"/>
+  <tile id="0">
+   <properties>
+    <property name="WallType" value="0"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="WallType" value="0"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="background" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgwARGVMC4ALnqCNlFqjp89hLrBmqrA2EAOeY84JABAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NiYGBgQsPUAOhm4jKbWHWE7CJVnRIOjOwmYsyjpjoQAABv+mJvkAEAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="10" height="10">
+  <object name="0" type="portal" x="224" y="4" width="62" height="26">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="220" height="40" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="grave" tilewidth="32" tileheight="32">
+  <image source="grave.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="220" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DwQkAAAwDoSP7D90t+lJw1VRVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVUfHw2dm6+AiQAA
+  </data>
+ </layer>
+ <layer name="collision" width="220" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+1cW27bQAwUkJP0JL1I24skhy8CyHA+5NWSOw/uegfgj2OKQ1KakY3IH8dxfOxYLr7OaMHN8R3j144lowduju8YjGuYBbc2zRiMeVbaxd8zGGDwdWlrBm5tmjEY86y0CyYYfNWaOoLHZxK3ph4FOLh38YC7P2afDJ6zac5B4jyrvr/7Lph9Mngqtcatge/YExtMDpF7GQYY+1BqjVsD37EnNtgcnH0y9rG9YO2e2FDU7/G5LD91bC9Yuyc2VPVX2c+r63Dke8BXcGsLwyccHoPgjeIezWXxzeQ44tV1+NX42ypao+oJDQRvFPdoLotvJqfSecSAW1tcgQaqNjufwRv1fvVeWedCC25tWUXTULXZ+QzeqPer98o6F1pw+4wr0Pg8g+1PI/nZetljjPRYZa9ouH3GFSyw/WkkP1sve4yRHhV77Xk+So0K2tJbG8HV7a1qf0OgSr1ozYqeGNEWll706hpCB93eqvY3BKrUi9Z85GT0muU9Fe6hGT6RzVvN30Z6UJ8HPZwzORm9Rt7X/oSyVpTDCO9s3mr+NtKD+jzo4ZzJUWtqC9vfcIH6/ZJsvqrff2ewwPA3paa2sP1Nu4NZ/M3haz2cMzkMXX2Flk5k60VrZTW4BSZHd2T7HunXNRtEj3c5aL1pXW8tnUDrWzYXrfOjHN2R7XukX9dsED3e5Sg1sWKt3rwWKs1DNd87/kg4e0Xs9edrSk2sWKs3r4VK81DN944/Es5eEXv9+ZpSEyvW6s1r4e5ZwRbHCr83FpkVYjcZqPqL1M30oNTEirV681q4e1awxXHkOUN1tOYTnVkUqv4idTM9qHTiENfKIlNHzRGBKr/lWSmucPW+7P8SfueqdOIQ18oiU0fNEQm1R1aO3vlk8Z07s+dsf8vD7SUVAz2nq2PN7Dnb3/Jwe0nFQM/p6lir+luU70hP6nkgkNnrSp/3rmbQM6fI7K6Otaq/RfmO9KSeBwKZvc70XWpm5z1ziszu6lgs7WAgUkvZU1ZPkYH0no0nkLOZxd8e379Gail7yuopMpDes/EEcjYsf1Po+Wz+NlNsPIGeDUtvmcee0d9mio0n0LNxaylLi/+codD832e4Z8GYrZtDtRiFW0vZWqzUfPcsGLN1c6gWo/gP7+FFvoCJAAA=
+  </data>
+ </layer>
+ <objectgroup name="portal" width="220" height="40">
+  <object name="0" type="portal" x="32" y="608" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="2"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="1408" y="160" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="2"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="2" type="portal" x="1472" y="512" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="3" type="portal" x="1056" y="736" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="4"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="4" type="portal" x="2464" y="512" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="3"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="5" type="portal" x="1344" y="1088" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="6"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="6" type="portal" x="3776" y="672" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="5"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="7" type="portal" x="704" y="1184" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="8"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="8" type="portal" x="2464" y="128" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="7"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="9" type="portal" x="1760" y="1248" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="10"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="portal" x="6560" y="928" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="9"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="11" type="portal" x="2080" y="1056" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="12"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="12" type="portal" x="4512" y="64" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="11"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="13" type="portal" x="2624" y="1248" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="14"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="14" type="portal" x="5632" y="672" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="13"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="15" type="portal" x="2880" y="1120" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="16"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="16" type="portal" x="5280" y="704" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="15"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="17" type="portal" x="3520" y="480" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="18"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="18" type="portal" x="3776" y="32" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="17"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="19" type="portal" x="4064" y="928" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="20"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="20" type="portal" x="5632" y="96" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="19"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="21" type="portal" x="5408" y="608" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="22"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="22" type="portal" x="6080" y="1024" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="21"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="23" type="portal" x="4320" y="1248" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="24"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="24" type="portal" x="6528" y="1024" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="23"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="25" type="portal" x="4448" y="864" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="26"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="26" type="portal" x="6944" y="768" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="25"/>
+    <property name="toZone" value="1"/>
+   </properties>
+  </object>
+  <object name="27" type="portal" x="7008" y="448" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="meetSauce"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

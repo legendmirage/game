@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="70" height="24" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="ID" value="7"/> 
+  <property name="zone" value="1"/>
+ </properties>
+ <tileset firstgid="1" name="bottom1" tilewidth="32" tileheight="32">
+  <image source="forest/bottom1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="grassTile1" tilewidth="32" tileheight="32">
+  <image source="forest/grassTile1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="tile1" tilewidth="32" tileheight="32">
+  <image source="forest/tile1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="4" name="bottom2" tilewidth="32" tileheight="32">
+  <image source="forest/bottom2.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="5" name="beach_platform" tilewidth="32" tileheight="32">
+  <image source="forest/beach_platform.png" width="160" height="96"/>
+ </tileset>
+ <layer name="platform" width="70" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3MMQrAIBAEQBuN/v/DsciBhSYWVmEGljvh3JQAAACA03JP7bmexN4+bmOWl9sy9I6pk/esY9UXc+cfAAD/dgPIi1DOQBoAAA==
+  </data>
+ </layer>
+ <objectgroup name="spawns" width="70" height="24">
+  <object name="playerSpawn" x="20" y="463" width="89" height="146">
+   <properties>
+    <property name="spawnID" value="0"/>
+   </properties>
+  </object>
+  <object name="monsterSpawn" x="1472" y="448" width="94" height="157">
+   <properties>
+    <property name="spawnID" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="background" width="70" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3OMQrAQAgEQH+QnPn/X2NzYBEkVYowAwsWixoBAAAA8I2jcrasSlauobs7+aLb+9P8tGO6Pf0JAPBHNyRnjlhAGgAA
+  </data>
+ </layer>
+ <layer name="wall" width="70" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3OMQ6AIBAEQCokUf//XWqJqxTEWMwk2ywHXCkAAAAAAP+2Dak33Uzaw90W+nE+zaV+Zvf68kY6Pz7IGfp9ci71K3ZY+YeIXNMBsPnKFEAaAAA=
+  </data>
+ </layer>
+</map>

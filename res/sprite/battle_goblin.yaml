@@ -1,0 +1,71 @@
+hitboxes:
+ - xpos: 82
+   ypos: 54
+   width: 60
+   height: 81
+   collision: true
+   multiplier: 1
+
+run:
+  speed: 100
+  frames:
+    - res/sprite/goblin/walk1.png
+    - res/sprite/goblin/walk2.png
+    - res/sprite/goblin/walk3.png
+    - res/sprite/goblin/walk4.png
+    - res/sprite/goblin/walk5.png
+    - res/sprite/goblin/walk6.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/goblin/idle1.png
+    - res/sprite/goblin/idle2.png
+    - res/sprite/goblin/idle3.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/goblin/jump1.png
+    - res/sprite/goblin/jump2.png
+fall:
+  speed: 300
+  frames:
+    - res/sprite/goblin/fall1.png
+    - res/sprite/goblin/fall2.png
+air:
+  speed: 50
+  frames:
+    - res/sprite/goblin/fall1.png
+land:
+  speed: 10
+  frames:
+    - res/sprite/goblin/land1.png
+melee:
+  speed: 10
+  frames:
+    - res/sprite/goblin/attack1.png
+    - res/sprite/goblin/attack2.png
+    - res/sprite/goblin/attack3.png
+    - res/sprite/goblin/attack4.png
+cast:
+  speed: 10
+  frames:
+    - res/sprite/goblin/casting0.png
+    - res/sprite/goblin/casting1.png
+    - res/sprite/goblin/casting2.png
+    - res/sprite/goblin/casting3.png
+    
+death:
+  speed: 200
+  frames:
+    - res/sprite/goblin/dying0.png
+    - res/sprite/goblin/dying1.png
+    - res/sprite/goblin/dying2.png
+    - res/sprite/goblin/dying3.png
+    - res/sprite/goblin/dying4.png
+    
+steam:
+ - width: 47
+   height: 90
+   xoffset: -40
+   r_xoffset: -40
+   yoffset: 10

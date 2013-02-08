@@ -1,0 +1,76 @@
+hitboxes:
+ - xpos: 10
+   ypos: 25
+   width: 20
+   height: 15
+   collision: true
+   multiplier: 1
+run:
+  speed: 100
+  frames:
+    - res/sprite/kumaChan/walking0.png
+    - res/sprite/kumaChan/walking1.png
+idle:
+  speed: 300
+  frames:
+    - res/sprite/kumaChan/standing1.png
+    - res/sprite/kumaChan/standing0.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/kumaChan/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/kumaChan/jumping0.png
+    - res/sprite/kumaChan/jumping1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/kumaChan/jumping2.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/kumaChan/jumping1.png
+    
+land:
+  speed: 10
+  frames:  
+    - res/sprite/kumaChan/jumping3.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/kumaChan/hit.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/kumaChan/casting0.png
+    - res/sprite/kumaChan/casting1.png
+    - res/sprite/kumaChan/casting2.png
+    - res/sprite/kumaChan/casting3.png
+    - res/sprite/kumaChan/casting4.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/kumaChan/casting0.png
+    - res/sprite/kumaChan/casting1.png
+    - res/sprite/kumaChan/casting2.png
+    - res/sprite/kumaChan/casting3.png
+death:
+  speed: 200
+  frames:
+    - res/sprite/kumaChan/dying0.png
+    - res/sprite/kumaChan/dying1.png
+    - res/sprite/kumaChan/dying2.png
+    
+steam:
+ - width: 24
+   height: 60
+   xoffset: -20
+   r_xoffset: -20
+   yoffset: -10
+   

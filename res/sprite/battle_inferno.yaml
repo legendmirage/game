@@ -1,0 +1,67 @@
+hitboxes:
+ - xpos: 40
+   ypos: 42
+   width: 80
+   height: 140
+   collision: true
+   multiplier: 1
+run:
+  speed: 200
+  frames:
+    - res/sprite/inferno/standing0.png
+    - res/sprite/inferno/standing1.png
+    - res/sprite/inferno/standing2.png
+    - res/sprite/inferno/standing3.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/inferno/standing0.png
+    - res/sprite/inferno/standing1.png
+    - res/sprite/inferno/standing2.png
+    - res/sprite/inferno/standing3.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/inferno/standing0.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/inferno/standing0.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/inferno/standing0.png
+    - res/sprite/inferno/standing1.png
+    - res/sprite/inferno/standing2.png
+    - res/sprite/inferno/standing3.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/inferno/standing0.png
+    - res/sprite/inferno/standing1.png
+    - res/sprite/inferno/standing2.png
+    - res/sprite/inferno/standing3.png
+death:
+  speed: 200
+  frames:
+    - res/sprite/inferno/dying0.png
+    - res/sprite/inferno/dying1.png
+    - res/sprite/inferno/dying2.png
+steam:
+ - width: 47
+   xoffset: 10
+   r_xoffset: 10
+   yoffset: -20
+   height: 90
+ - width: 24
+   height: 45
+   xoffset: 5
+   r_xoffset: 5
+   yoffset: -40
+ - width: 47
+   xoffset: -40
+   r_xoffset: -40
+   yoffset: -60
+   height: 90

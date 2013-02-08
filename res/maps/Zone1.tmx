@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="name" value="Beach"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3ToRGAQAwF0VwNXCPQfAYoBBoBTSTDTMx9QcSK9c+sm5m/WqMt2ovkn47oLODKfFd0F3BlvqmZ9fa/K/PNYVsK+/hD8/GH5uMPzccfmo8/NB9/aD7+0Hz8ofn4Q/Pxh+bjD83HH5qv2h9EREQjPacL+OQAGQAA
+  </data>
+ </layer>
+ <layer name="collision" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2VwQnDMAxFlRnaRdoJPInXNMki7SLtOYIicIRCDj7oFSz4+ODL58HjNxFpXVbNpqma0qUmvc3lpXnL72qXrI6+30fzleOR+N0Wkfty7Efi99BuT9ePxM/8oPLr/bDL6laCfpEfJH6RHyR+kR8kfpEfJH6RHyR+cz/G+M39GOM392OM39yPMX5zP8b4/dt+ZHaL+Hk/MrtF/LwfNH7eDxo/7weNn/lRoPzMD/un8TM/7J/Gz/yg8uv9yOR31o+yH1d+2NH4Ufbjyg8qP8p+nPHzftD4eT+y+e0U+EcOABkAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="40" height="40">
+  <object name="0" type="portal" x="480" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="11"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="40" height="40"/>
+ <objectgroup name="monsters" width="40" height="40"/>
+</map>

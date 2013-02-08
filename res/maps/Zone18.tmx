@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="world"/>
+  <property name="name" value="Crossroads"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3XQQqAMAxE0dnlYt7ZhcfwQiJULIilDbGOdRZ/K49EizUAllpTFtQSUP48+eRj8OXJV++L3rV89cnn2++oPpD72Ocn3/U7nwL6m68Uw37f8h3zlg+YHe6795Ul+eSTT76o9jMSOM9KNh/7/L7m6x0IDKU8/wjquSLuGi33kNF8vdoARCRETAAZAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA82YPU7DQBCFJ7kCNHRpaRBwBDc5haVtchIuASWXAEHDJUDhHAho0rAreZSXlxlnHezNPunJkX+yn8fzvNYuRKSJnstWCxmu9+jv6OeRnRSIad4xqxpny3oaOPZX9IdhvE9Li45Z6xrgPnB7LJ9yvXXXbeh/lsTn1SPItq7eOcfwPdJ1F7NdxlXHj8/3kPScPs7cHmQ+izFpeWA8VQPnBeMYKqeGFt+mY1RdRl/P8uoSZP885EX+HL6rOO5D3N7BGMiWpD2IDH2cXL8Ax5B/SIYTJzKqtHac30b8XvT2s4a+Y7SWaGVjvlyGMfly3s9jaEj//ZePezAn46EQn9WDAY4d0pR8ytY3n5Tgw3nZYmMOi9fady+72TuWTeflFv4b2Xhs5vX2jVE7i81itITzxNRqZZ/RY8O5wzo+lZjPGzvtL5Fd/G6wnm+fkD3lgOcknpeG+iX61eGzxlONzeF5Hf1JNWl7xlONzWE5cfxE/xp83jUl+ZLPYo3OZ1uu2vhuItstfKPq+6UWPs5HbfVbi52PWvg4H9qDtfBhPpSvpvpxPpSxFr5kzIg+X12PYdZT8K1lNyP6jHW9A9ePTsHnZYS/FVbwe4o1Pc9eRvg3s/KaXIn+62OyhGtyUzhxWP2Xq6n5vP7LZeQMle6/mtXKPitn+1T3YXEwr3WsRF6S/wBVZPZrABkAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="40" height="40">
+  <object name="0" type="portal" x="128" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="19"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="1248" y="1184" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="17"/>
+   </properties>
+  </object>
+  <object name="2" type="portal" x="0" y="1120" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="11"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="96" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="19"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="1248" y="1216" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="17"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="40" height="40"/>
+ <objectgroup name="monsters" width="40" height="40"/>
+</map>

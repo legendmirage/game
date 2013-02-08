@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="11" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="spire"/>
+  <property name="name" value="Backstage"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="11" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NlYGBwRcLszAwMHMwQ2pUBPx5VO6qWFmoBCWvJUpQCAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="11" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgGAWjYHABAHevG6iUAgAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="11" height="15">
+   <object name="0" type="portal" x="160" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="29"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="160" y="448" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="26"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="192" y="448" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="26"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="128" y="448" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="26"/>
+   </properties>
+  </object>
+
+  <object name="0" type="portal" x="128" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="29"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="192" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="29"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="11" height="15"/>
+ <objectgroup name="monsters" width="11" height="15"/>
+</map>

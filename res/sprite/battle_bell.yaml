@@ -1,0 +1,71 @@
+hitboxes:
+ - xpos: 20
+   ypos: 32
+   width: 40
+   height: 45
+   collision: true
+   multiplier: 1
+run:
+  speed: 300
+  frames:
+    - res/sprite/bell/standing0.png
+    - res/sprite/bell/standing1.png
+idle:
+  speed: 300
+  frames:
+    - res/sprite/bell/standing0.png
+    - res/sprite/bell/standing1.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/bell/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/bell/jumping2.png
+    - res/sprite/bell/jumping1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/bell/jumping1.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/bell/jumping1.png
+    
+land:
+  speed: 10
+  frames:
+    - res/sprite/bell/jumping2.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/bell/hit.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/bell/jumping0.png
+    - res/sprite/bell/jumping1.png
+    - res/sprite/bell/jumping2.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/bell/jumping0.png
+    - res/sprite/bell/jumping1.png
+    - res/sprite/bell/jumping2.png
+death:
+  speed: 200
+  frames:
+    - res/sprite/bell/dying0.png
+    - res/sprite/bell/dying1.png
+    
+    
+    
+steam:
+ - width: 47
+   yoffset: -20
+   height: 90

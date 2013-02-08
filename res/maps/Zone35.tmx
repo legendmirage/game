@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="11" height="11" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="mario"/>
+  <property name="name" value="House"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NlYGBwHSBsM4B2jyQMACJna4LkAQAA
+  </data>
+ </layer>
+ <layer name="collision" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+NgYGDgIBJzMhAHOIlQy4lEE6OWg0i1pLhhKKslNs5AGADkx+HK5AEAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="11" height="11">
+  <object name="0" type="portal" x="288" y="64" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="33"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="11" height="11"/>
+ <objectgroup name="monsters" width="11" height="11">
+  <object name="monsterGroup0" x="109" y="150" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Nightshade0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

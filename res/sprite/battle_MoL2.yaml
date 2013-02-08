@@ -1,0 +1,68 @@
+hitboxes:
+ - xpos: 80
+   ypos: 20
+   width: 55
+   height: 100
+   collision: true
+   multiplier: 1
+   
+run:
+  speed: 100
+  frames:
+    - res/sprite/MoL2/standing0.png
+    - res/sprite/MoL2/standing1.png
+    - res/sprite/MoL2/standing2.png
+    - res/sprite/MoL2/standing3.png
+idle:
+  speed: 300
+  frames:
+    - res/sprite/MoL2/standing0.png
+    - res/sprite/MoL2/standing1.png
+    - res/sprite/MoL2/standing2.png
+    - res/sprite/MoL2/standing3.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/MoL2/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/MoL2/standing0.png
+    - res/sprite/MoL2/standing1.png
+    - res/sprite/MoL2/standing2.png
+    - res/sprite/MoL2/standing3.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/MoL2/standing0.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/MoL2/standing0.png
+    
+land:
+  speed: 10
+  frames:
+    - res/sprite/MoL2/standing0.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/MoL2/standing0.png
+
+melee:
+  speed: 10
+  frames:
+  - res/sprite/MoL2/attacking0.png
+  - res/sprite/MoL2/attacking1.png
+  - res/sprite/MoL2/attacking2.png
+  - res/sprite/MoL2/attacking3.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/MoL2/attacking0.png
+    - res/sprite/MoL2/attacking1.png
+    - res/sprite/MoL2/attacking2.png
+    - res/sprite/MoL2/attacking3.png

@@ -1,0 +1,58 @@
+hitboxes:
+ - xpos: 20
+   ypos: 32
+   width: 80
+   height: 60
+   collision: true
+   multiplier: 1
+run:
+  speed: 150
+  frames:
+    - res/sprite/bookman/standing0.png
+    - res/sprite/bookman/standing1.png
+    - res/sprite/bookman/standing2.png
+    - res/sprite/bookman/standing3.png
+idle:
+  speed: 150
+  frames:
+    - res/sprite/bookman/standing0.png
+    - res/sprite/bookman/standing1.png
+    - res/sprite/bookman/standing2.png
+    - res/sprite/bookman/standing3.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/bookman/standing0.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/bookman/hit.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/bookman/casting0.png
+    - res/sprite/bookman/casting1.png
+    - res/sprite/bookman/casting2.png
+    - res/sprite/bookman/casting3.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/bookman/casting0.png
+    - res/sprite/bookman/casting1.png
+    - res/sprite/bookman/casting2.png
+    - res/sprite/bookman/casting3.png
+death:
+  speed: 300
+  frames:
+    - res/sprite/bookman/standing0.png
+    - res/sprite/bookman/dying0.png
+    - res/sprite/bookman/dying1.png
+
+steam:
+ - width: 47
+   xoffset: 10
+   r_xoffset: 10
+   yoffset: -20
+   height: 90

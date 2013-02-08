@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="11" height="11" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="mario"/>
+  <property name="name" value="House"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="shannon_sprites" tilewidth="32" tileheight="32">
+  <image source="../sprite/shannon_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NlYGBwHcXDGgMA0JXcMeQBAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="11" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+NgYGDgIBJzMhAHOClU28ZMG3OHk1ps8QMD6OIAvNMtueQBAAA=
+  </data>
+ </layer>
+ <objectgroup name="portal" width="11" height="11">
+  <object name="0" type="portal" x="192" y="320" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="4"/>
+    <property name="toZone" value="19"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="160" y="320" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="4"/>
+    <property name="toZone" value="19"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="11" height="11">
+  <object name="viola" type="npcs" x="105" y="73" width="80" height="80">
+   <properties>
+    <property name="quest" value="Cure Viola's Blindness"/>
+    <property name="scene" value="Quest10"/>
+    <property name="scene1" value="Quest10Inter"/>
+    <property name="scene2" value="Quest10Done"/>
+    <property name="scene3" value="Quest10Over"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="11" height="11"/>
+</map>

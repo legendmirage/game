@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="145" height="105" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="sam_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/sam_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="913" name="factoryboss_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/factoryboss_sprites.png" width="96" height="128"/>
+ </tileset>
+ <layer name="background" width="145" height="105">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2XMVIDMRAEnfkl/iSvJ4QAu+7QSZqe66AzrJ2d7QL8fDweTxERWcrrF7uzCBMdklGIDn0FZJAfiA5JFi/5N7tvl8LuO5DZfbsUdt+BzO7bpbCjk6tnrtxBhzI60aEudCh3FgUdyp1FQYdyZ1HQodxZFHb1r0M96FDuLAr+LcudRUGHcmdR0KHcWRR0KHfWbo7uqUPnPqtDGZ00O/TXd0+Rd+iQjKJDMkry3/eVM2jvts7Soc67tvVFy95w17a+aNkb7trWFy17w13b+qJlp9/V72W97+pQ3gzau6sdauqLll2Hjmee+fuNfGu6Q7Nn6dC5Tmb3Q3ToynePdp+YXYcy3m1xqPGulL6Ofi4xe/td2/qiZW+4a1tftOwNd23ri5a94a5tfdGyN9y1rS9a9oa7Evo685m07He4K6EvHWLMer0hYQcdYsxa7dAKCP03ObS6Lx3quasOZWYndbPLoaM/m5i9AR3SIR3Sod3okA7pkA7tRod0SId0aDc6pEM6lJP9rNMt6JAO6dCa7KJDOqRDOpSLDu3N3oAO6ZAOHf/ZxOwN6JAO6dC8XZOyJ3NVH4Q76JAOrXhXh7Ih3FeHspnVuw7dBx3qdGhW/yvvQM7eQINDtJ523zy5Gx3KzE7qRocys5O62eXQfz6Xkr0BHeJkT5p15x10KPvdth3I2d0hYwdydnfI2IGc3R0ydiBnd4eMHcjZ3WH83Stm2v+9d9Ahdzjz7ifSszf037CDDrlD0rst2d0hYwdydnfI2IGc3R0ydiBnd4eMHcjZ3SFjh5EZnz43693E/u/+/ViHGA69RE6gQzKKDskos/5vkfV4VxlFh2QUHZJRdEhGSXLoGwrEcyDk7QAA
+  </data>
+ </layer>
+ <layer name="collision" width="145" height="105">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2cSXPcRBiGNbbJzUBCbiwxJjdiJ/jGYnNO2HyDxOHMkji3sIzPhgS4UECWc9gKTkCWM1mo5FcESAp+BcvbZatGntKMLHe31N16nqqn5KlqlyXNN3LPp7c1kWXZRAfNAtgH41rBafmgfEg+LHfLPfIRuXdobG7b+2+c6ahZAPtgXCr4tDwg5+S8PCgPyWfkglwpjF3cfN32/huhPUwtrGSD2jgsj8iX5MvyFfmqfE0uZ4O6WSz8DnSX/qYrBd+Sb8t35LvyhDwpV+Wpwri8hvqN7zWERn/IdfmR/FiekWflJ/JT+VnJ+K5j5o9zFc5vY4xx1Bxib2NHA21g5o/bqQ8bFxo7GmgDM3/0XUPLjR0NtAE1BLZQQ2BLEzXEfChtqCGwpYnvZW38L5vONu55fSe/b+Hvd4lUr0P5/Yr8/gT4I9XrEDXUHFyHwBauQ82Tz9VG5ZNiI5br0PpkvfEh11BVPik2Uu0x5vmN1WwjrxESVfmk2ChmZSZ7WTYlH5C7eqNfV40ry9w0TZ7fyPMaIVGVT4qNYlbmSb3/s/Ipub83+nXVuLLMDQyoyid1nf6InwFs+LzmfBgAAAAAAAAAAAAAANLgUjbIlhhjzCe5xuacdPF8/pptPeYY80musTknXTyfd7OtxxxjPsk1Nuck9PPp4zoZ+jG3Qco15OM6Gfoxt0HKNeRj//7JBvlSs40xJ+kam3MS+vn0UUOPFvKlZktO0u6chH4+Q79OGlJb15QaMdRQauuaUiOGGkptXVNqxFBDqa1rSo0Yaoh1TWETQw1B2FBDYAs1BLZQQ2BL6H10CJ/Q++gAAFCPuvf2ntW1/zn5vHxBLsol+WJv9N8wma+v5Tfy26z8WdbbGQNhUvfe3uuqlTfkUXlMrsjj8s0xNWQyX9flDXlT3pK/7WAMuMPlZ7buvb3TqpX35PvyA/mh7Mu1MTVkvkv/Lv+Qf8p78v4OxoA7XH5m697b+0K18qX8Sp6T5+UFeXFMDZnv0v/K/8wLjevJiV79MeAOl5/Zuvf2ftL7+rP8RV6WV+RVeW3M+22+Sz8mH5dPyH1ypld/DLiDzyzYwmc2TYbXLHVpjSe4YXjNUpfWePqia2uuh+8Fc0/Ynq6tuaaG3NO1jAY15B6XNRTDeq1iJiXv1YWeTQl9vuGyhmJYr1XMpOS9utCzKaHPN1xmxViv5YfQ5xsus2Ks1/JD6DXkEtZr+aFLNeSb0OeWviCb7o7Q55a+IJvuDq7pYAs1VI3LHl0M/b66UEPVuOzRxdDvqwtzy2pc9uhS7Pcxt6zGZY+Ofl83cdmjo98HAAAAADllvbIf5I+Fbey9M/BLWa/strxT2MbeOwO/lPXK/pJ/F7ax987AL2W9sqnNXne+pXcG4yjrlc1u9rrzLb0zAAAAAIBw8ZkHjOk5rSnmIpvCZx4wpue0ppiLbAqfecCYntOaYi6yKXzmAWN65iO5yJ3jMw8Y0zMfyUUCAAAAAAAAAAAAQJf4H9NQVvPk7QAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="145" height="105">
+  <object name="0" type="portal" x="1984" y="0" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="meetKid"/>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="145" height="105">
+  <object name="sam" type="npcs" x="2283" y="517" width="80" height="80">
+   <properties>
+    <property name="quest" value="Kill Three Rats"/>
+    <property name="scene" value="getSauceQuest"/>
+    <property name="scene2" value="questDone1"/>
+   </properties>
+  </object>
+  <object name="factory" type="npcs" x="1735" y="683" width="80" height="80">
+   <properties>
+    <property name="quest" value="Kill Two Goblins"/>
+    <property name="scene" value="getQuest2"/>
+    <property name="scene2" value="questDone2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

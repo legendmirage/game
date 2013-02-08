@@ -1,0 +1,66 @@
+zone 0: town
+zone 3: town
+zone 4: forest
+zone 5: forest
+#shrine thing
+zone 6: forest
+zone 7: forest
+zone 8: forest
+zone 9: forest
+zone 10: beach
+zone 11: beach
+zone 12: beach
+zone 13: beach
+zone 14: beach
+#actually, these look more like plains
+zone 15: forest
+zone 16: forest
+zone 17: forest
+#back to sparse forest. could pass off for town
+zone 18: forest
+zone 19: town
+#opera
+zone 20: opera
+zone 21: opera
+zone 22: opera
+zone 23: opera
+zone 24: opera
+zone 25: opera
+zone 26: opera
+zone 27: opera
+zone 28: opera
+zone 29: opera
+zone 30: town
+zone 31: town
+zone 32: town
+zone 33: town
+zone 34: town
+zone 35: town
+zone 36: town
+zone 37: town
+zone 38: town
+zone 39: town
+zone 40: town
+
+
+town:
+  layers:
+    - res/art/background/town1.png
+    - res/art/background/town2.png
+    - res/art/background/town3.png
+forest:
+  layers:
+    - res/art/background/bglayer4.png
+    - res/art/background/bglayer3.png
+    - res/art/background/bglayer2.png
+    - res/art/background/bglayer1.png
+beach:
+  layers:
+    - res/art/background/beachbg4.png
+    - res/art/background/beachbg3.png
+    - res/art/background/beachbg2.png
+    - res/art/background/beachbg1.png
+opera:
+  layers:
+    - res/art/background/operabg2.png
+    - res/art/background/operabg1.png

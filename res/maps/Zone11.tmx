@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="30" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="january"/>
+  <property name="name" value="Dimestone Beach"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="ben_front" tilewidth="32" tileheight="32">
+  <image source="../npcs/ben_front.png" width="32" height="32"/>
+ </tileset>
+ <layer name="background" width="60" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3UwRFAQBBE0d4YSITkpxAIiXA2RyWAsdX+4d+7Ly8kxaMlW7PNtHi1Z0cHu6r+ntnVwa6qv0OTxvb9rqq/U36df/QXr7zCK7xyCq/wyim8wiun8AqvnMIrvHIKr/DKKbzCK6fwyturGy+CfeYgHAAA
+  </data>
+ </layer>
+ <layer name="collision" width="60" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA6VX0U0FQQhcYwnaiFZAJa8ba3rRRrQR/fYukQTHGZj1kZB7bxeG4bhjueta61r09dC3Qy+Hxo9eyrWuL8OGreN1slV+/7G7gr4f+vGTC8Oo/o4NW2dcOlvlV/dSKi9mh/l+Hvq1fgvLrQrjz3jeUl+WQ91DUXiY78PdWo93GiP9q1xgXeWHHFaxm+rGYgWn2T4HmO/TkeuzyFfdzy6+qpPCR9suloNT8c7fmG/2qx1x47tYbqyKGfDfrW/tV66w+Iyn8u1wFVbGrGvsPat7p4/TrzpOiKuEYUTjk3tBfOteXWMxqrD6sn7FsCdBm673KG6x+Jng1pfxcPpVYsean91qM0lnx2L+R+qZcarTr9S5qPBvzVXFvEUSx+lXGTcanlGuDrfpXcc4O/1OxT/X3fkq47vzlRNfye4zgvjdLODOV119u2dcraPNriQuw++4uPNVYkz1RZnevc4X7RguOzsU3rnmzle31lfFn+bhIPu41s3naO/OV2nf1XHKh/kw3miDGLiG3Nh5vTNfVW6KOxN2/5kN2nZYa+3Xt2LsfA/unIUs/jSndPdlrb9YbC1WX4+d70GWQ8etu/9OLgoX/Sf8KLrzPajeGyYB++5sln5KlH+Hfyna9auX+55Xdy/V3DG9D059mdS4itOpbr9icROf8U38yQdtkKcrqr6x+vqyfqXiTnVw5p6pB6g9lBjwU51+tRO3k93ZLPdc7G4GUPVl/apyYrwcSV93Nuti7nCY6svmK/esmOI69Q1Yw5hoP0nFYPWt/SrW3/j5u+LhNcQ+cq3/u7mw4jlnP8NPVf2qxlYz0sS3y4Nxn/xYzJrfxInVN/sV3hfFpeM7zVfT/XJi7tid+g0+cIn3IBwAAA==
+  </data>
+ </layer>
+ <objectgroup name="portal" width="60" height="30">
+  <object name="0" type="portal" x="480" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="12"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="1888" y="256" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="2"/>
+    <property name="toZone" value="18"/>
+   </properties>
+  </object>
+  <object name="2" type="portal" x="1888" y="576" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="13"/>
+   </properties>
+  </object>
+  <object name="3" type="portal" x="960" y="928" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="10"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="60" height="30">
+  <object name="ben" type="npcs" x="202" y="652" width="80" height="80">
+   <properties>
+    <property name="scene" value="Shop"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="60" height="30">
+  <object name="monsterGroup0" x="704" y="192" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="12"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Herman0,Herman0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1071" y="655" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Vagrant2,Vagrant2,Axe2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1376" y="864" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="12"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Herman0,Vagrant2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1632" y="96" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe2,Vagrant2,Vagrant2,Vagrant2,Vagrant2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="608" y="576" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="12"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Herman0,Axe2,Vagrant2,Herman0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1104" y="336" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Caracal0,Vagrant2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1328" y="112" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Caracal0,Dustling2,Dustling2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1743" y="783" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Caracal0,Vagrant2,Axe2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1488" y="624" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Vagrant2,Ogre1,Axe2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="367" y="207" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="12"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe2,Vagrant2,Herman0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="815" y="687" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Axe2,Shield1,Dustling2,Dustling2,Dustling2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="896" y="160" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="12"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Vagrant2,Shield1,Herman0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1408" y="512" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="12"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Vagrant0,Vagrant0,Herman0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="463" y="847" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="12"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Herman0,Shield1"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="288" y="448" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="0"/>
+    <property name="monsters" value="Shannon"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

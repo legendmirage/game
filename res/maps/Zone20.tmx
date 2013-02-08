@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="40" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="spire"/>
+  <property name="name" value="Entrance Hall"/>
+  
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="15" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA3NlYGBwxYI5mBkY2JkhNDZ5fHhU76jeUb2jekf1juod1TuqdyTrBQCGsHbIYAkAAA==
+  </data>
+ </layer>
+ <layer name="collision" width="15" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA2NgYGBIYmZgSAbiFCAGAU0oDQMwPro6EGgAshuBuAkq5o6mF8ZHVzcKRsFgAlyj6XIUjIJRMApoDiqpWNZyM+Pn4wO42jnEAFztHHQAAFaCMJ5gCQAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="15" height="40">
+  <object name="0" type="portal" x="224" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="21"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="224" y="1248" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="19"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="256" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="21"/>
+   </properties>
+  </object>
+  <object name="0" type="portal" x="192" y="0" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="21"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="256" y="1248" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="19"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="192" y="1248" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="19"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="15" height="40"/>
+ <objectgroup name="monsters" width="15" height="40">
+  <object name="monsterGroup0" x="416" y="192" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Bookman0, Kuma1"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="384" y="1152" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Caracal2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="64" y="1152" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Caracal2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="384" y="576" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Nightshade1, Kuma1"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="96" y="448" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Kuma1, Teacup1, Teacup1, Teacup1"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="64" y="128" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Bookman0, Bookman0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="128" y="832" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Teacup1,Teacup1,Teacup1,Teacup1,Teacup1,Teacup1,Teacup1"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="384" y="896" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Kuma1, Nightshade1, Kuma1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,83 @@
+hitboxes:
+ - xpos: 45
+   ypos: 23
+   width: 120
+   height: 60
+   collision: true
+   multiplier: 1
+
+
+offset:
+  [0, 0]
+
+run:
+  speed: 100
+  frames:
+    - res/sprite/caracal/walking0.png
+    - res/sprite/caracal/walking1.png
+    - res/sprite/caracal/walking2.png
+    - res/sprite/caracal/walking3.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/caracal/standing0.png
+    - res/sprite/caracal/standing1.png
+    - res/sprite/caracal/standing2.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/caracal/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/caracal/jumping0.png
+    - res/sprite/caracal/jumping1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/caracal/jumping3.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/caracal/jumping2.png
+    
+land:
+  speed: 10
+  frames:  
+    - res/sprite/caracal/jumping4.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/caracal/standing0.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/caracal/casting0.png
+    - res/sprite/caracal/casting1.png
+    - res/sprite/caracal/casting2.png
+    - res/sprite/caracal/casting3.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/caracal/casting0.png
+    - res/sprite/caracal/casting1.png
+    - res/sprite/caracal/casting2.png
+    - res/sprite/caracal/casting3.png
+death:
+  speed: 200
+  frames:
+    - res/sprite/caracal/dying0.png
+    - res/sprite/caracal/dying1.png
+    - res/sprite/caracal/dying2.png
+    - res/sprite/caracal/dying3.png
+    - res/sprite/caracal/dying5.png
+steam:
+ - width: 47
+   height: 90
+   xoffset: 35
+   r_xoffset: 35
+   yoffset: -35

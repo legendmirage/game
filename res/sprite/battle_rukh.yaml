@@ -1,0 +1,106 @@
+hitboxes:
+ - xpos: 52
+   ypos: 35
+   width: 60
+   height: 180
+   collision: true
+   multiplier: 1
+ - xpos: 52
+   ypos: 30
+   width: 60
+   height: 195
+   collision: false
+   multiplier: 1
+
+run:
+  speed: 100
+  frames:
+    - res/sprite/rukh/standing0.png
+    - res/sprite/rukh/standing1.png
+    - res/sprite/rukh/standing3.png
+    - res/sprite/rukh/standing4.png
+    - res/sprite/rukh/standing5.png
+    - res/sprite/rukh/standing6.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/rukh/standing0.png
+    - res/sprite/rukh/standing1.png
+    - res/sprite/rukh/standing3.png
+    - res/sprite/rukh/standing4.png
+    - res/sprite/rukh/standing5.png
+    - res/sprite/rukh/standing6.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/rukh/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/rukh/standing0.png
+    - res/sprite/rukh/standing1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/rukh/standing0.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/rukh/standing0.png
+    
+land:
+  speed: 10
+  frames:
+    - res/sprite/rukh/standing0.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/rukh/hit1.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/rukh/standing0.png
+    - res/sprite/rukh/standing1.png
+    - res/sprite/rukh/standing3.png
+    - res/sprite/rukh/standing4.png
+    - res/sprite/rukh/standing5.png
+    - res/sprite/rukh/standing6.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/rukh/standing0.png
+    - res/sprite/rukh/standing1.png
+    - res/sprite/rukh/standing3.png
+    - res/sprite/rukh/standing4.png
+    - res/sprite/rukh/standing5.png
+    - res/sprite/rukh/standing6.png
+
+death:
+  speed: 200
+  frames:
+    - res/sprite/rukh/dying0.png
+    - res/sprite/rukh/dying1.png
+    - res/sprite/rukh/dying3.png
+    - res/sprite/rukh/dying4.png
+    - res/sprite/rukh/dying5.png
+    
+steam:
+ - width: 47
+   height: 90
+   yoffset: -25
+   
+ - width: 47
+   height: 90
+   xoffset: 25
+   r_xoffset: 25
+   yoffset: 45
+  
+ - width: 40
+   height: 75
+   xoffset: -40
+   r_xoffset: -70
+   yoffset: 20

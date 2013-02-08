@@ -1,0 +1,66 @@
+hitboxes:
+ - xpos: 90
+   ypos: 5
+   width: 30
+   height: 90
+   collision: true
+   multiplier: 1
+   
+run:
+  speed: 100
+  frames:
+    - res/sprite/cory/standing0.png
+    - res/sprite/cory/standing1.png
+idle:
+  speed: 500
+  frames:
+    - res/sprite/cory/standing0.png
+    - res/sprite/cory/standing1.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/cory/standing0.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/cory/standing0.png
+    - res/sprite/cory/standing1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/cory/standing0.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/cory/standing0.png
+    
+land:
+  speed: 10
+  frames:
+    - res/sprite/cory/standing0.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/cory/standing0.png
+
+melee:
+  speed: 10
+  frames:
+  - res/sprite/cory/attacking0.png
+  - res/sprite/cory/attacking1.png
+  - res/sprite/cory/attacking2.png
+cast:
+  speed: 10
+  frames:
+  - res/sprite/cory/attacking0.png
+  - res/sprite/cory/attacking1.png
+  - res/sprite/cory/attacking2.png
+    
+death:
+  speed: 200
+  frames:
+    - res/sprite/cory/dying1.png
+    - res/sprite/cory/dying2.png
+    

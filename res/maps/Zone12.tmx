@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="40" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="music" value="january"/>
+  <property name="name" value="Cape of Storms"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <tileset firstgid="901" name="elise_sprites" tilewidth="32" tileheight="32">
+  <image source="../tilemap/elise_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="913" name="kai_sprites" tilewidth="32" tileheight="32">
+  <image source="../npcs/kai_sprites.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="925" name="ben_front" tilewidth="32" tileheight="32">
+  <image source="../npcs/ben_front.png" width="32" height="32"/>
+ </tileset>
+ <layer name="background" width="50" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3UsQkAMAhFQbNQ9geXS5UNDBI54fr3GzMikq/s1d8AUG3Sb5u0BQCAd+51d1Rt6W4AAACocADBOdaqQB8AAA==
+  </data>
+ </layer>
+ <layer name="collision" width="50" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA82Z0W0DIQyGXWWfzsAi3DKVOkDf+tCHTpHHTpFFOkEbNZbcP7axgSNnCZnjOPi/GDhynInobKRP+rPtlorjCbxXj4z7WE50377Vr8VwTc9PRO+//kW0afmWJq3vVrlWz+rX45BJ8rBVkdd+vygr3reuuT9svyQ4tPggC/exkW6o3dIk25H3q6iH7WY4JA/GBrWylgrXXn15jfFAFtle7eSQsZHxwT4sjZoV5VqrX4XfRL6XoxUfqQHHnmYZ5gr5WRzW3LH6HrUKiSZyyKSxaL/hLJa9OJDF0j3CUsHvxcF7AUvzaExWxcOaLxrPDJa9OLy44JjIxkZrY28ObU3WOLK2alx5MZlhuPau4PBiErW3k87BtoKjNU962VbHIzK2etZhOb+OwpG1o4wr1DTCczSO7DuE/VHG1ej74wgcs96Fqzi+gnqyHOwfPaaknh5bNc+/yY/FDJ5H7Hct7VmGj9P/5x49L7R8xlbMc2R4hb3eiO257l7nwuWWVsyJ2fsS1h/Rjv2PvDc4Xxbq9zRlrMCz/F0xo/sCqaXf+//d+73E+s5oje+sZtamaZ3FUByfWes1691LRKxQ/Ayr553l3YvUaVm5eXmex+WRc7XWnnSVRc7VsNzj0MZxCXrLWvW43BpDhXSmzLjSnm+dr6Jv1ZPlGsNG92tWJB7IENEUPaP26mEfBPki2rraD+t7C9JAHwAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="50" height="40">
+  <object name="0" type="portal" x="928" y="1248" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="11"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="50" height="40">
+  <object name="annie" type="npcs" x="839" y="875" width="80" height="80">
+   <properties>
+    <property name="quest" value="Defeat the thief"/>
+    <property name="scene" value="Quest6"/>
+    <property name="scene1" value="Quest6Inter"/>
+    <property name="scene2" value="Quest6Done"/>
+    <property name="scene3" value="Quest6Over"/>
+   </properties>
+  </object>
+  <object name="kai" type="npcs" x="1322" y="458" width="80" height="80">
+   <properties>
+    <property name="quest" value="Kill the human-eater!"/>
+    <property name="scene" value="Quest7"/>
+    <property name="scene1" value="Quest7Inter"/>
+    <property name="scene2" value="Quest7Done"/>
+    <property name="scene3" value="Quest7Over"/>
+   </properties>
+  </object>
+  <object name="ben" type="npcs" x="1448" y="821" width="80" height="80">
+   <properties>
+    <property name="scene" value="Shop"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="monsters" width="50" height="40"/>
+</map>

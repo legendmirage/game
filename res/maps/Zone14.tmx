@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="11" tilewidth="32" tileheight="32">
+ <properties>
+   <property name="music" value="january"/>
+  <property name="name" value="Steppes of War"/>
+ </properties>
+ <tileset firstgid="1" name="tiles_sheet" tilewidth="32" tileheight="32">
+  <image source="tiles_sheet.png" width="960" height="960"/>
+ </tileset>
+ <layer name="background" width="60" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA9vNwMCwGw37M2KKDQW8HUrvIlFf7hD1LwzfIFF9N538ux2NvZ1K5n4bBGGOza+48EC7jZ5+Ha5+Hkl4JMbvYPLrSkZwHdZAb39T09yFDAwJxJbTxxnBdRhd/AvzMy3MEyGyXgW1r77R0b+0wkZY/AsAGzVc/1AKAAA=
+  </data>
+ </layer>
+ <layer name="collision" width="60" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA4tlwA4CGBkYtjMMLRwLxDtx+IcBKh+LQy5vCPoXhK+T6d8eoH+vMlAHf8HhtlgCfBj+RIJdX8n0LzVBKpqbYH5Dth+Zvx1N/X4quYNe/sVlLz5MK3tHGhhp8UsP/2oC8UwkjJ5/0fF2NPXNVHIHPv+uYkS1kxJsgKduQ/cnNqxHhluwldP4/HuCjvUvPr+Sa54wI2n+HYrtK2RsiMO/AO0C9rxQCgAA
+  </data>
+ </layer>
+ <objectgroup name="portal" width="60" height="11">
+  <object name="0" type="portal" x="1888" y="160" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="1"/>
+    <property name="toZone" value="15"/>
+   </properties>
+  </object>
+  <object name="1" type="portal" x="0" y="160" width="32" height="32">
+   <properties>
+    <property name="toPortal" value="0"/>
+    <property name="toZone" value="13"/>
+   </properties>
+  </object>
+  <object x="928" y="160" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="scene7"/>
+   </properties>
+  </object>
+  <object x="1056" y="160" width="32" height="32">
+   <properties>
+    <property name="cutscene" value="scene8"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="npcs" width="60" height="11"/>
+ <objectgroup name="monsters" width="60" height="11">
+  <object name="monsterGroup0" x="1056" y="160" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="0"/>
+    <property name="monsters" value="Kaivan"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="832" y="160" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Caracal0,Caracal0,Caracal0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1280" y="160" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Caracal0,Caracal0,Caracal0"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="480" y="96" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Vagrant2,Axe2,Shield1,Shield1,Shield1"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="480" y="224" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Vagrant2,Axe2,Shield1,Shield1,Shield1"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1536" y="96" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Vagrant2,Axe2,Shield2,Axe2,Axe2"/>
+   </properties>
+  </object>
+  <object name="monsterGroup0" x="1536" y="224" width="33" height="33">
+   <properties>
+    <property name="battleMapID" value="0"/>
+    <property name="groupID" value="0"/>
+    <property name="level" value="1"/>
+    <property name="monsters" value="Vagrant2,Axe2,Shield2,Vagrant2,Vagrant2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,93 @@
+width: 108
+height: 108
+
+hitboxes:
+ - xpos: 40
+   ypos: 8
+   width: 30
+   height: 80
+   collision: false
+   multiplier: 1
+ - xpos: 50
+   ypos: 8
+   width: 20
+   height: 80
+   collision: true
+   multiplier: 1
+   
+offset:
+  [0, 0]
+
+run:
+  speed: 70
+  frames:
+    - res/sprite/lucas/walking0.png
+    - res/sprite/lucas/walking1.png
+    - res/sprite/lucas/walking2.png
+    - res/sprite/lucas/walking3.png
+    - res/sprite/lucas/walking4.png
+    - res/sprite/lucas/walking5.png
+    - res/sprite/lucas/walking6.png
+    - res/sprite/lucas/walking7.png
+    - res/sprite/lucas/walking8.png
+idle:
+  speed: 430
+  frames:
+    - res/sprite/lucas/standing0.png
+    - res/sprite/lucas/standing1.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/lucas/dash.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/lucas/jumping0.png
+    - res/sprite/lucas/jumping1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/lucas/jumping3.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/lucas/jumping2.png
+    
+land:
+  speed: 10
+  frames:  
+    - res/sprite/lucas/jumping4.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/lucas/hit.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/lucas/attacking0.png
+    - res/sprite/lucas/attacking1.png
+    
+cast:
+  speed: 200
+  frames:
+    - res/sprite/lucas/casting0.png
+    - res/sprite/lucas/casting1.png
+    - res/sprite/lucas/casting2.png
+    - res/sprite/lucas/casting3.png
+    
+
+death:
+  speed: 200
+  frames:
+    - res/sprite/lucas/dying0.png
+    - res/sprite/lucas/dying1.png
+    - res/sprite/lucas/dying2.png
+    - res/sprite/lucas/dying1.png
+    - res/sprite/lucas/dying2.png
+    - res/sprite/lucas/dying1.png
+    - res/sprite/lucas/dying2.png
+    - res/sprite/lucas/dying1.png
+    - res/sprite/lucas/dying2.png

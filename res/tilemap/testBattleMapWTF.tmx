@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="70" height="24" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="bottom1" tilewidth="32" tileheight="32">
+  <image source="forest/bottom1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2" name="grassTile1" tilewidth="32" tileheight="32">
+  <image source="forest/grassTile1.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="tile1" tilewidth="32" tileheight="32">
+  <image source="forest/tile1.png" width="32" height="32"/>
+ </tileset>
+ <layer name="platform" width="70" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3UMQoAMAgDQOn/H90nSAep6B1kz5JEALDZSQLMkG3d7gH+efnoqp/u0AEAgF4uE5RM6EAaAAA=
+  </data>
+ </layer>
+ <objectgroup name="spawns" width="70" height="24">
+  <object name="playerSpawn" x="20" y="463" width="89" height="146">
+   <properties>
+    <property name="spawnID" value="0"/>
+   </properties>
+  </object>
+  <object name="monsterSpawn" x="1495" y="449" width="94" height="157">
+   <properties>
+    <property name="spawnID" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="background" width="70" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3UMQoAMAgDQPv/T3d3kQ5FkTvIniWJAACyUwTYodq63QP0efnoXz89oQMAQJcLLQEkUEAaAAA=
+  </data>
+ </layer>
+ <layer name="wall" width="70" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3DsQkAAAgDsKL//+wDroJDAkkAAAAAAH4r1616dABO3BX9QBoAAA==
+  </data>
+ </layer>
+</map>

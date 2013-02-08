@@ -1,0 +1,75 @@
+hitboxes:
+ - xpos: 15
+   ypos: 70
+   width: 65
+   height: 75
+   collision: true
+   multiplier: 1
+
+run:
+  speed: 100
+  frames:
+    - res/sprite/wheely/walking0.png
+    - res/sprite/wheely/walking1.png
+    - res/sprite/wheely/walking2.png
+idle:
+  speed: 200
+  frames:
+    - res/sprite/wheely/standing0.png
+    - res/sprite/wheely/standing1.png
+    - res/sprite/wheely/standing2.png
+    - res/sprite/wheely/standing3.png
+dash:
+  speed: 50
+  frames:
+    - res/sprite/wheely/walking1.png
+jump:
+  speed: 10
+  frames:
+    - res/sprite/wheely/standing0.png
+    - res/sprite/wheely/standing1.png
+    
+fall:
+  speed: 300
+  frames:
+    - res/sprite/wheely/standing0.png
+    
+air:
+  speed: 50
+  frames:
+    - res/sprite/wheely/standing0.png
+    
+land:
+  speed: 10
+  frames:  
+    - res/sprite/wheely/standing0.png
+hit:
+  speed: 50
+  frames:
+    - res/sprite/wheely/hit.png
+
+melee:
+  speed: 10
+  frames:
+    - res/sprite/wheely/standing0.png
+    - res/sprite/wheely/standing1.png
+    - res/sprite/wheely/standing2.png
+    - res/sprite/wheely/standing3.png
+cast:
+  speed: 200
+  frames:
+    - res/sprite/wheely/standing0.png
+    - res/sprite/wheely/standing1.png
+    - res/sprite/wheely/standing2.png
+    - res/sprite/wheely/standing3.png
+
+death:
+  speed: 200
+  frames:
+    - res/sprite/wheely/dying0.png
+    - res/sprite/wheely/dying1.png
+  
+steam:
+ - width: 47
+   yoffset: 50
+   height: 90
